@@ -8,7 +8,7 @@ Portofolio web berbasis *Single Page Application* (SPA) dengan tema **Engineerin
 ---
 
 ## 🚀 Fitur Unggulan
-1. **Design System Engineering**: Palet warna terang (*clean white*, *slate/steel blue* `#1e40af` dan `#2563eb`), font modern (Inter & JetBrains Mono), tanpa tema gelap atau efek AI neon.
+1. **Design System Engineering**: Palet warna terang (*clean white*, *slate/steel blue* `#1e40af` dan `#2563eb`), font modern (Poppins), tanpa tema gelap atau efek AI neon.
 2. **Interactive Experience & Project Filter**: Filter kategori proyek (*All*, *Software Dev*, *Project Management*, *Kompetisi Nasional*).
 3. **Interactive Project Specifications Modal**: Menampilkan rincian teknis, deliverable, dan tech stack tiap proyek (Jadwalin, Arenahub, KMHE 2026, Profil Lab JTI).
 4. **Curriculum Vitae Quick Access**: Modal pratinjau CV terstruktur dengan fitur cetak instan (`window.print()`) dan tautan ke portofolio lengkap di Canva.
