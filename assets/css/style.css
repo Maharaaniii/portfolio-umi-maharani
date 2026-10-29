@@ -1,0 +1,38 @@
+/* Global font override to Poppins */
+*, html, body, button, input, select, textarea {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Technical Grid Accent */
+.bg-grid-tech {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
+}
+
+.technical-border {
+  border: 1px solid rgba(226, 232, 240, 1);
+}
+
+/* Smooth Transition for UI components */
+.transition-smooth {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom Scrollbar for Engineering feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+

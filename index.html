@@ -53,38 +53,8 @@
     }
   </script>
 
-  <style>
-    /* Global font override to Poppins */
-    *, html, body, button, input, select, textarea {
-      font-family: 'Poppins', sans-serif !important;
-    }
-    /* Technical Grid Accent */
-    .bg-grid-tech {
-      background-size: 24px 24px;
-      background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
-    }
-    .technical-border {
-      border: 1px solid rgba(226, 232, 240, 1);
-    }
-    /* Smooth Transition for UI components */
-    .transition-smooth {
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    /* Custom Scrollbar for Engineering feel */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #f1f5f9;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #94a3b8;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #64748b;
-    }
-  </style>
+  <!-- External Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-corporate-100 selection:text-corporate-900 min-h-screen flex flex-col justify-between">
 
@@ -110,15 +80,18 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center space-x-1 lg:space-x-1.5 text-xs lg:text-sm font-medium text-slate-600 font-sans">
-          <a href="#about" class="px-2.5 lg:px-3 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Tentang</a>
-          <a href="#projects" class="px-2.5 lg:px-3 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">
-            <span>Proyek<span class="hidden xl:inline"> & Pengalaman</span></span>
+          <a href="#about" class="px-2 lg:px-2.5 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Tentang</a>
+          <a href="#projects" class="px-2 lg:px-2.5 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">
+            <span>Proyek<span class="hidden xl:inline"> & PBL</span></span>
           </a>
-          <a href="#skills" class="px-2.5 lg:px-3 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Keahlian</a>
-          <a href="#achievements" class="px-2.5 lg:px-3 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">
+          <a href="#skills" class="px-2 lg:px-2.5 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Keahlian</a>
+          <a href="#achievements" class="px-2 lg:px-2.5 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">
             <span>Prestasi<span class="hidden xl:inline"> & Organisasi</span></span>
           </a>
-          <a href="#contact" class="px-2.5 lg:px-3 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Kontak</a>
+          <a href="#gallery" class="px-2 lg:px-2.5 py-2 rounded-lg font-medium hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">
+  <span>Dokumentasi</span>
+</a>
+          <a href="#contact" class="px-2 lg:px-2.5 py-2 rounded-lg hover:text-corporate-700 hover:bg-slate-100 transition-smooth whitespace-nowrap">Kontak</a>
         </nav>
 
         <!-- Right Action Buttons -->
@@ -152,9 +125,10 @@
     <!-- Mobile Dropdown Navigation -->
     <div id="mobileMenu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1">
       <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Tentang Saya</a>
-      <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Proyek & Pengalaman</a>
+      <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Proyek & Pengalaman PBL</a>
       <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Keahlian Teknis</a>
       <a href="#achievements" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Prestasi & Organisasi</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-corporate-700 font-semibold bg-corporate-50 hover:bg-corporate-100">Galeri Bukti & Dokumentasi</a>
       <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-corporate-700">Kontak</a>
       <div class="pt-2">
         <a href="#contact" class="block w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold text-white bg-corporate-700">
@@ -193,14 +167,14 @@
               </h1>
               <div class="inline-block">
                 <p class="text-lg sm:text-xl lg:text-2xl font-semibold text-corporate-700 tracking-tight">
-                  D4 Business Information Systems Student | Project Manager & Front-End Developer
+                  D4 Business Information Systems Student | Junior Front-End Developer, Business Analyst, System Analyst & Information Technology Governance Enthusiast
                 </p>
               </div>
             </div>
 
             <!-- Engineering Statement -->
             <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-              Mahasiswa tingkat akhir di Politeknik Negeri Malang dengan keahlian ganda: memadukan kepemimpinan manajemen proyek dengan eksekusi rekayasa perangkat lunak modern (<span class="font-semibold text-slate-800">Laravel, Tailwind CSS, Alpine.js, & Flutter</span>) untuk membangun solusi sistem informasi bisnis yang presisi, efisien, dan berdampak nyata.
+              Mahasiswa tingkat 3 di Politeknik Negeri Malang dengan keahlian dalam kepemimpinan, manajemen proyek dengan keahlian pada rekayasa perangkat lunak (<span class="font-semibold text-slate-800">Laravel, Tailwind CSS, Alpine.js, & Flutter</span>) untuk membangun solusi sistem informasi bisnis yang presisi, efisien, dan berdampak nyata.
             </p>
 
             <!-- CTA Buttons -->
@@ -232,11 +206,11 @@
               <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-mono text-slate-500">
                 <div class="flex items-center gap-2">
                   <div class="w-2 h-2 rounded-full bg-corporate-600"></div>
-                  <span>IPK & Prestasi Unggul</span>
+                  <span>Front-end & Business Analyst Enthusiast</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <div class="w-2 h-2 rounded-full bg-corporate-600"></div>
-                  <span>Beasiswa Unggulan 2025</span>
+                  <span>Awardee Beasiswa Unggulan 2025</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <div class="w-2 h-2 rounded-full bg-corporate-600"></div>
@@ -266,11 +240,17 @@
               <div class="p-6 space-y-5">
                 
                 <div class="flex items-center gap-4">
-                  <div class="w-16 h-16 rounded-xl bg-corporate-50 border-2 border-corporate-200 flex items-center justify-center text-corporate-700 font-bold text-2xl font-mono shadow-inner">
-                    UM
+                  <div class="relative shrink-0 cursor-pointer group" onclick="openLightboxByImage('assets/images/profile-umi.jpg', 'Umi Maharani — Mahasiswa D4 Sistem Informasi Bisnis Polinema', 'Foto profil resmi mengenakan jas almamater Politeknik Negeri Malang.')" title="Klik untuk memperbesar foto">
+                    <img src="assets/images/profile-umi.jpg" alt="Foto Profil Umi Maharani" class="w-16 h-16 rounded-xl object-cover object-top border-2 border-corporate-200 shadow-md group-hover:scale-105 transition-smooth">
+                    <span class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full" title="Tersedia untuk Magang"></span>
                   </div>
                   <div>
-                    <h3 class="font-bold text-slate-900 text-lg">Umi Maharani</h3>
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-1.5">
+                      <span>Umi Maharani</span>
+                      <svg class="w-4 h-4 text-corporate-600 inline" fill="currentColor" viewBox="0 0 20 20" title="Profil Terverifikasi">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                    </h3>
                     <p class="text-xs font-mono text-slate-500">SIB-D4 // 2024–Sekarang (semester 5)</p>
                     <p class="text-xs text-corporate-700 font-medium mt-0.5">Politeknik Negeri Malang</p>
                   </div>
@@ -333,10 +313,10 @@
           <div class="lg:col-span-7 space-y-6">
             <div class="p-6 sm:p-8 bg-slate-50 rounded-2xl border border-slate-200 shadow-2xs">
               <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-                Mahasiswa tingkat akhir D4 Sistem Informasi Bisnis Politeknik Negeri Malang yang berpengalaman sebagai <strong class="text-slate-900 font-semibold">Project Manager</strong> dan <strong class="text-slate-900 font-semibold">Front-End Developer</strong>. Berpengalaman memimpin tim dan mengembangkan berbagai aplikasi akademik menggunakan ekosistem <span class="text-corporate-700 font-semibold">Laravel</span> dan <span class="text-corporate-700 font-semibold">Flutter</span>.
+                Mahasiswa tingkat akhir D4 Sistem Informasi Bisnis Politeknik Negeri Malang yang berpengalaman sebagai <strong class="text-slate-900 font-normal">Project Manager</strong> dan <strong class="text-slate-900 font-normal">Front-End Developer</strong>. Berpengalaman memimpin tim dan mengembangkan berbagai aplikasi akademik menggunakan <span class="text-corporate-700 font-semibold">Laravel</span> dan <span class="text-corporate-700 font-semibold">Flutter</span>.
               </p>
               <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal mt-4">
-                Memiliki rekam jejak kepemimpinan sebagai <strong class="text-slate-900 font-semibold">Manajer Divisi Non-Teknis</strong> di Tunas Autron Team dan merupakan peraih <span class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold">Beasiswa Unggulan Kemendikdasmen 2025</span> serta juara esai tingkat nasional. Terampil mengintegrasikan <em>tech stack</em> dengan pemikiran analitis untuk menciptakan solusi digital yang optimal.
+                Memiliki rekam jejak kepemimpinan sebagai <strong class="text-slate-900 font-normal">Manager Non-Technical</strong> Tunas Autron Team dan merupakan peraih <span class="rounded font">Beasiswa Unggulan Kemendikdasmen 2025</span> serta juara esai tingkat nasional. Terampil mengintegrasikan <em>tech stack</em> dengan pemikiran analitis untuk menciptakan solusi digital yang optimal.
               </p>
             </div>
 
@@ -348,7 +328,7 @@
                 </div>
                 <h4 class="font-bold text-slate-900 text-sm">Rekayasa Modular</h4>
                 <p class="text-xs text-slate-500 mt-1 leading-normal">
-                  Penerapan arsitektur bersih, terstruktur, dan mudah diskalakan dengan Laravel & Tailwind CSS.
+                  Penerapan MVC yang terintegrasi dengan Laravel dan Tailwind CSS
                 </p>
               </div>
 
@@ -356,9 +336,9 @@
                 <div class="w-8 h-8 rounded-lg bg-corporate-50 text-corporate-700 flex items-center justify-center font-bold text-sm mb-3">
                   02
                 </div>
-                <h4 class="font-bold text-slate-900 text-sm">Manajemen Proyek & Agile</h4>
+                <h4 class="font-bold text-slate-900 text-sm">Manajemen Proyek</h4>
                 <p class="text-xs text-slate-500 mt-1 leading-normal">
-                  Kepemimpinan multidisiplin, alokasi sumber daya, pengawalan milestone, dan manajemen risiko.
+                  Kepemimpinan, alokasi sumber daya, milestone monitoring, dan manajemen risiko.
                 </p>
               </div>
 
@@ -368,7 +348,7 @@
                 </div>
                 <h4 class="font-bold text-slate-900 text-sm">Business Intelligence & Data</h4>
                 <p class="text-xs text-slate-500 mt-1 leading-normal">
-                  Analisis data terintegrasi menggunakan SQL, Power BI, dan RapidMiner untuk keputusan berbasis fakta.
+                  Analisis data terintegrasi menggunakan SQL, Pentaho, dan RapidMiner untuk keputusan berbasis fakta.
                 </p>
               </div>
 
@@ -376,7 +356,7 @@
                 <div class="w-8 h-8 rounded-lg bg-corporate-50 text-corporate-700 flex items-center justify-center font-bold text-sm mb-3">
                   04
                 </div>
-                <h4 class="font-bold text-slate-900 text-sm">Jaminan Kualitas (QA Automation)</h4>
+                <h4 class="font-bold text-slate-900 text-sm">Automated Testing</h4>
                 <p class="text-xs text-slate-500 mt-1 leading-normal">
                   Testing otomatis menggunakan Playwright & Cypress untuk memastikan reliabilitas sebelum deployment.
                 </p>
@@ -397,7 +377,7 @@
                   </svg>
                   <span>Riwayat Pendidikan</span>
                 </h3>
-                <span class="text-xs font-mono text-slate-500">FORMAL_EDU</span>
+                <span class="text-xs font-mono text-slate-500">FORMAL EDU</span>
               </div>
 
               <!-- Polinema -->
@@ -426,17 +406,28 @@
                 </p>
               </div>
 
-              <!-- Language & Communication -->
+              <!-- Language & Communication with Official Certification -->
               <div class="pt-4 border-t border-slate-200">
-                <h4 class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider mb-3">Kemampuan Bahasa</h4>
-                <div class="grid grid-cols-2 gap-3 text-xs">
-                  <div class="p-2.5 rounded-lg bg-white border border-slate-200">
-                    <span class="text-slate-500 block text-[11px]">Bahasa Indonesia</span>
-                    <span class="font-semibold text-slate-800">Tingkat Mahir (Native)</span>
+                <div class="flex items-center justify-between mb-3">
+                  <h4 class="text-xs font-mono font-semibold text-slate-500 uppercase tracking-wider">Kemampuan Bahasa & Sertifikasi</h4>
+                  <span class="text-[11px] font-mono text-corporate-700 bg-corporate-50 px-1.5 py-0.5 rounded border border-corporate-200">UKBI 630</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                  <div class="p-3 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+                    <div class="flex items-center justify-between">
+                      <span class="text-slate-500 block text-[11px]">Bahasa Indonesia</span>
+                      <span class="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-800 font-bold text-[10px] border border-emerald-200">SKOR 630</span>
+                    </div>
+                    <span class="font-semibold text-slate-900 block mt-1">Predikat: UNGGUL</span>
+                    <p class="text-[11px] text-slate-500 mt-1 leading-snug">Uji Kemahiran Berbahasa Indonesia (UKBI) Badan Bahasa Kemendikbudristek.</p>
+                    <button onclick="openLightboxByImage('assets/images/sertifikat-ukbi.jpg', 'Sertifikat Uji Kemahiran Berbahasa Indonesia (UKBI) — Skor 630', 'Badan Pengembangan dan Pembinaan Bahasa Kemendikbudristek RI, Predikat: UNGGUL.')" class="mt-2 text-[11px] font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                      <span>Lihat Sertifikat Resmi &rarr;</span>
+                    </button>
                   </div>
-                  <div class="p-2.5 rounded-lg bg-white border border-slate-200">
+                  <div class="p-3 rounded-xl bg-white border border-slate-200 shadow-2xs">
                     <span class="text-slate-500 block text-[11px]">Bahasa Inggris</span>
-                    <span class="font-semibold text-slate-800">Menengah (Intermediate)</span>
+                    <span class="font-semibold text-slate-900 block mt-1">Menengah (Intermediate)</span>
+                    <p class="text-[11px] text-slate-500 mt-1 leading-snug">Komunikasi profesional, dokumentasi teknis, dan literatur rekayasa perangkat lunak.</p>
                   </div>
                 </div>
               </div>
@@ -465,7 +456,7 @@
             </div>
             <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Pengalaman & Proyek Utama</h2>
             <p class="text-sm text-slate-600 mt-1 max-w-xl">
-              Dokumentasi proyek berbasis Project-Based Learning (PBL) dan kepemimpinan delegasi rekayasa nasional.
+              Dokumentasi proyek berbasis Project Based Learning dan kepemimpinan  organisasi.
             </p>
           </div>
 
@@ -489,32 +480,34 @@
         <!-- Projects Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="projects-grid">
           
-          <!-- ============================================== -->
-          <!-- PENGALAMAN 1: JADWALIN (Full-Stack Developer)  -->
-          <!-- ============================================== -->
+          <!-- ============================================================== -->
+          <!-- PROYEK PBL 1: WEB PROFILE LAB JTI (Semester 3) - Front-End Dev -->
+          <!-- ============================================================== -->
           <div class="project-card dev bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between overflow-hidden">
             <div>
               <!-- Card Top Spec Bar -->
               <div class="p-6 border-b border-slate-100 bg-linear-to-r from-corporate-50/50 to-transparent">
                 <div class="flex items-center justify-between mb-3">
                   <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-corporate-100 text-corporate-800 border border-corporate-200">
-                    FULL-STACK DEVELOPER
+                    FRONT-END DEVELOPER
                   </span>
-                  <span class="text-xs font-mono text-slate-500 font-medium">PBL // 2026</span>
+                  <span class="text-xs font-mono text-corporate-700 font-semibold bg-corporate-50 px-2 py-0.5 rounded border border-corporate-200">
+                    PROYEK PBL 1 // SEMESTER 3
+                  </span>
                 </div>
                 <h3 class="text-2xl font-bold text-slate-900 tracking-tight flex items-center justify-between">
-                  <span>Jadwalin</span>
-                  <span class="text-xs font-mono font-normal text-slate-400">B2B SaaS</span>
+                  <span>Web Profile Laboratorium JTI</span>
+                  <span class="text-xs font-mono font-normal text-slate-400">Portal Akademik</span>
                 </h3>
                 <p class="text-xs text-corporate-700 font-medium mt-1">
-                  Sistem Penjadwalan Roster Otomatis & Manajemen Timesheet Operasional
+                  Laboratorium Information Learning Engineering Technology JTI Polinema
                 </p>
               </div>
 
               <!-- Card Content -->
               <div class="p-6 space-y-4">
                 <p class="text-sm text-slate-600 leading-relaxed">
-                  Mengembangkan aplikasi B2B tingkat perusahaan untuk mengotomatiskan penjadwalan kerja tim secara dinamis, pelacakan kehadiran real-time berbasis shift, dan manajemen timesheet operasional yang akurat.
+                  Mengembangkan website profil laboratorium Jurusan Teknologi Informasi untuk mendigitalisasi informasi fasilitas akademik, modul pembelajaran, dan publikasi riset mahasiswa agar lebih mudah diakses.
                 </p>
 
                 <!-- Technical Highlights -->
@@ -523,13 +516,40 @@
                     <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong>Arsitektur Modular:</strong> Membangun sistem menggunakan kombinasi Laravel, Tailwind CSS, dan Alpine.js guna menjamin skalabilitas kode dan performa aplikasi yang tinggi.</span>
+                    <span><strong>Responsive UI/UX:</strong> Merancang antarmuka pengguna berbasis web responsif menggunakan HTML5, CSS3 murni, dan integrasi PHP.</span>
                   </div>
                   <div class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong>Automated Testing:</strong> Mengimplementasikan skenario pengujian otomatis end-to-end secara komprehensif menggunakan <strong>Playwright</strong> dan <strong>Cypress</strong> guna meminimalisir bug pra-rilis.</span>
+                    <span><strong>Digitalisasi Fasilitas:</strong> Memastikan penataan hierarki konten yang ramah pengguna bagi civitas akademika dan mahasiswa baru.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo Proof Thumbnail with Switcher -->
+              <div class="px-6 pb-2">
+                <div class="space-y-2">
+                  <div id="webprofile-main-img-box" class="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 group cursor-pointer" onclick="openLightboxByImage('assets/images/pbl-team-cert.jpg', 'Proyek PBL 1: Tim Pengembang Web Profile Laboratorium JTI', 'Tim pengembang mahasiswa D4 Sistem Informasi Bisnis mengenakan jas almamater Politeknik Negeri Malang di depan backdrop Indosat JTI Polinema.')" title="Klik untuk memperbesar foto dokumentasi">
+                    <img id="webprofile-preview-img" src="assets/images/pbl-team-cert.jpg" alt="Dokumentasi Lab Profile" class="w-full h-44 object-cover object-center group-hover:scale-105 transition-smooth">
+                    <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/15 transition-smooth flex items-center justify-between p-3">
+                      <span class="px-2.5 py-1 rounded-md bg-white/95 text-slate-800 text-[11px] font-semibold shadow-xs flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-corporate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <span id="webprofile-badge-text">Tim Pengembang</span>
+                      </span>
+                      <span class="text-[10px] font-mono bg-corporate-900/80 text-white px-2 py-0.5 rounded backdrop-blur-xs">Semester 3</span>
+                    </div>
+                  </div>
+                  <!-- Switcher Buttons -->
+                  <div class="flex items-center gap-2">
+                    <button type="button" onclick="setWebProfilePhoto(1)" id="webprofile-thumb-1" class="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer">
+                      <span class="w-2 h-2 rounded-full bg-corporate-600 shrink-0"></span>
+                      <span class="truncate">Foto Tim Almamater</span>
+                    </button>
+                    <button type="button" onclick="setWebProfilePhoto(2)" id="webprofile-thumb-2" class="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer">
+                      <span class="w-2 h-2 rounded-full bg-slate-300 shrink-0"></span>
+                      <span class="truncate">Foto Evaluasi Modul</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -538,24 +558,29 @@
             <!-- Card Footer: Badges & Actions -->
             <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
               <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Laravel</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Tailwind CSS</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Alpine.js</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Playwright</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Cypress</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">HTML5</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">CSS3</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">PHP</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Responsive UI</span>
               </div>
-              <button onclick="openProjectModal('jadwalin')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
-                <span>Rincian Spesifikasi</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
+              <div class="flex items-center gap-2">
+                <button onclick="openLightboxByImage('assets/images/pbl-team-cert.jpg', 'Proyek PBL 1: Tim Pengembang Web Profile Laboratorium JTI', 'Tim pengembang mahasiswa D4 Sistem Informasi Bisnis mengenakan jas almamater Politeknik Negeri Malang di depan backdrop Indosat JTI Polinema.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Bukti Foto</span>
+                </button>
+                <span class="text-slate-300">|</span>
+                <button onclick="openProjectModal('labprofile')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>Rincian</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- ============================================== -->
-          <!-- PENGALAMAN 2: ARENAHUB (Project Manager)       -->
-          <!-- ============================================== -->
+          <!-- ============================================================== -->
+          <!-- PROYEK PBL 2: ARENAHUB (Project Manager) - Foto 4 & 5          -->
+          <!-- ============================================================== -->
           <div class="project-card pm bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between overflow-hidden">
             <div>
               <!-- Card Top Spec Bar -->
@@ -564,21 +589,23 @@
                   <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-blue-100 text-blue-800 border border-blue-200">
                     PROJECT MANAGER
                   </span>
-                  <span class="text-xs font-mono text-slate-500 font-medium">PBL // 2026</span>
+                  <span class="text-xs font-mono text-blue-800 font-semibold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
+                    PROYEK PBL 2 // SISTEM INFORMASI BISNIS
+                  </span>
                 </div>
                 <h3 class="text-2xl font-bold text-slate-900 tracking-tight flex items-center justify-between">
                   <span>Arenahub</span>
                   <span class="text-xs font-mono font-normal text-slate-400">SI Bisnis</span>
                 </h3>
                 <p class="text-xs text-corporate-700 font-medium mt-1">
-                  Solusi Sistem Informasi Bisnis Pemesanan Sarana & Lapangan Digital
+                  Solusi Sistem Informasi Bisnis Pemesanan Sarana & Lapangan Berbasis Digital
                 </p>
               </div>
 
               <!-- Card Content -->
               <div class="p-6 space-y-4">
                 <p class="text-sm text-slate-600 leading-relaxed">
-                  Memimpin tim pengembang multidisiplin dalam merancang dan mengeksekusi pembuatan Arenahub—sebuah aplikasi booking fasilitas olahraga dengan arsitektur sistem informasi bisnis digital—dari tahap inisiasi konsep hingga development.
+                  Memimpin tim pengembang dalam merancang pembuatan sebuah aplikasi booking fasilitas olahraga dengan arsitektur sistem informasi bisnis digital yaitu Arenahub.
                 </p>
 
                 <!-- Technical Highlights -->
@@ -597,6 +624,33 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Photo Proof Thumbnail with Switcher (Foto 4 & 5) -->
+              <div class="px-6 pb-2">
+                <div class="space-y-2">
+                  <div id="arenahub-main-img-box" class="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 group cursor-pointer" onclick="openLightboxByImage('assets/images/arenahub-team-standing.jpg', 'Proyek PBL 2: Tim Pengembang Arenahub & Showcase Produk', 'Tim pengembang Arenahub menunjukkan antarmuka aplikasi booking fasilitas olahraga di depan backdrop kemitraan Indosat Jurusan TI Polinema.')" title="Klik untuk memperbesar foto dokumentasi">
+                    <img id="arenahub-preview-img" src="assets/images/arenahub-team-standing.jpg" alt="Dokumentasi PBL Arenahub" class="w-full h-44 object-cover object-center group-hover:scale-105 transition-smooth">
+                    <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/15 transition-smooth flex items-center justify-between p-3">
+                      <span class="px-2.5 py-1 rounded-md bg-white/95 text-slate-800 text-[11px] font-semibold shadow-xs flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <span id="arenahub-badge-text">Foto bersama tim</span>
+                      </span>
+                      <span class="text-[10px] font-mono bg-slate-900/80 text-white px-2 py-0.5 rounded backdrop-blur-xs">PBL 2</span>
+                    </div>
+                  </div>
+                  <!-- Switcher Buttons for Foto 4 & 5 -->
+                  <div class="flex items-center gap-2">
+                    <button type="button" onclick="setArenahubPhoto(1)" id="arenahub-thumb-1" class="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer">
+                      <span class="w-2 h-2 rounded-full bg-corporate-600 shrink-0"></span>
+                      <span class="truncate">Foto 4: Showcase Tim</span>
+                    </button>
+                    <button type="button" onclick="setArenahubPhoto(2)" id="arenahub-thumb-2" class="flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer">
+                      <span class="w-2 h-2 rounded-full bg-slate-300 shrink-0"></span>
+                      <span class="truncate">Foto 5: Demonstrasi UI</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Card Footer: Badges & Actions -->
@@ -607,18 +661,151 @@
                 <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">UI/UX Design</span>
                 <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Team Leadership</span>
               </div>
-              <button onclick="openProjectModal('arenahub')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
-                <span>Rincian Spesifikasi</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
+              <div class="flex items-center gap-2">
+                <button onclick="openLightboxByImage('assets/images/arenahub-team-standing.jpg', 'Proyek PBL 2: Tim Pengembang Arenahub & Showcase Produk', 'Tim pengembang Arenahub menunjukkan antarmuka aplikasi booking fasilitas olahraga di depan backdrop kemitraan Indosat Jurusan TI Polinema.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Bukti Foto</span>
+                </button>
+                <span class="text-slate-300">|</span>
+                <button onclick="openProjectModal('arenahub')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>Rincian</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- ============================================== -->
-          <!-- PENGALAMAN 3: GENERAL MANAGER KMHE 2026       -->
-          <!-- ============================================== -->
+          <!-- ============================================================== -->
+          <!-- PROYEK PBL 3: JADWALIN (Full-Stack Developer) - SaaS Spec Bar  -->
+          <!-- ============================================================== -->
+          <div class="project-card dev bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between overflow-hidden">
+            <div>
+              <!-- Card Top Spec Bar -->
+              <div class="p-6 border-b border-slate-100 bg-linear-to-r from-corporate-50/50 to-transparent">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-corporate-100 text-corporate-800 border border-corporate-200">
+                    FULL-STACK DEVELOPER
+                  </span>
+                  <span class="text-xs font-mono text-corporate-700 font-semibold bg-corporate-50 px-2 py-0.5 rounded border border-corporate-200">
+                    PROYEK PBL 3 // SISTEM ROSTER & TIMESHEET
+                  </span>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-900 tracking-tight flex items-center justify-between">
+                  <span>Jadwalin</span>
+                  <span class="text-xs font-mono font-normal text-slate-400">B2B SaaS</span>
+                </h3>
+                <p class="text-xs text-corporate-700 font-medium mt-1">
+                  Sistem Penjadwalan Roster Otomatis & Manajemen Timesheet Operasional
+                </p>
+              </div>
+
+              <!-- Card Content -->
+              <div class="p-6 space-y-4">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Mengembangkan aplikasi B2B tingkat perusahaan untuk mengotomatiskan penjadwalan kerja tim secara dinamis, tracking kehadiran real-time berbasis shift, dan manajemen timesheet operasional.
+                </p>
+
+                <!-- Technical Highlights -->
+                <div class="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200/80 text-xs text-slate-700">
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span><strong>Arsitektur Modular:</strong> Membangun sistem menggunakan kombinasi Laravel, Tailwind CSS, dan Alpine.js guna menjamin skalabilitas kode dan performa aplikasi yang tinggi.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span><strong>Automated Testing:</strong> Mengimplementasikan skenario pengujian otomatis end-to-end secara komprehensif menggunakan <strong>Playwright</strong> dan <strong>Cypress</strong> guna meminimalisir bug sebelum deployment.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technical Architecture & System Preview (Tanpa foto kelompok, fokus arsitektur sistem teknis) -->
+              <div class="px-6 pb-2">
+                <div class="rounded-xl overflow-hidden border border-slate-300 bg-slate-900 text-slate-200 font-mono shadow-inner group cursor-pointer hover:border-corporate-400 transition-smooth" onclick="openProjectModal('jadwalin')" title="Klik untuk melihat rincian spesifikasi arsitektur Jadwalin">
+                  <!-- Terminal / Spec Header -->
+                  <div class="px-3.5 py-2.5 bg-slate-800/90 border-b border-slate-700/80 flex items-center justify-between text-[11px]">
+                    <div class="flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                      <span class="text-slate-300 font-mono ml-2 text-[10px]">jadwalin-roster-engine.spec.ts</span>
+                    </div>
+                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-950/70 px-2 py-0.5 rounded border border-emerald-800/60">Automated QA: 100% Passed</span>
+                  </div>
+                  <!-- Architecture Visual Simulation -->
+                  <div class="p-4 space-y-2.5 bg-linear-to-b from-slate-900 to-slate-950">
+                    <div class="flex items-center justify-between text-[11px]">
+                      <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded bg-corporate-900 text-corporate-300 border border-corporate-700/60 text-[10px] font-semibold">ROSTER MATRIX</span>
+                        <span class="text-slate-300 font-sans text-xs font-semibold">Shift Scheduling Algorithm</span>
+                      </div>
+                      <span class="text-[10px] text-slate-400 font-sans">MySQL Relational DB</span>
+                    </div>
+                    <!-- Mini Shift Matrix Table -->
+                    <div class="grid grid-cols-4 gap-1.5 text-center text-[10px] py-1">
+                      <div class="p-1.5 rounded bg-slate-800/90 border border-slate-700/60">
+                        <span class="block text-slate-400 text-[9px]">SENIN</span>
+                        <span class="text-emerald-400 font-semibold">Shift Pagi</span>
+                      </div>
+                      <div class="p-1.5 rounded bg-slate-800/90 border border-slate-700/60">
+                        <span class="block text-slate-400 text-[9px]">SELASA</span>
+                        <span class="text-sky-400 font-semibold">Shift Siang</span>
+                      </div>
+                      <div class="p-1.5 rounded bg-slate-800/90 border border-slate-700/60">
+                        <span class="block text-slate-400 text-[9px]">RABU</span>
+                        <span class="text-indigo-400 font-semibold">Shift Malam</span>
+                      </div>
+                      <div class="p-1.5 rounded bg-slate-800/90 border border-slate-700/60">
+                        <span class="block text-slate-400 text-[9px]">KAMIS</span>
+                        <span class="text-amber-400 font-semibold">Off Day</span>
+                      </div>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[10px] font-sans">
+                      <span class="text-slate-400 flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-corporate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        <span>Playwright & Cypress Testing Suite</span>
+                      </span>
+                      <span class="text-corporate-300 font-semibold group-hover:text-white transition-smooth flex items-center gap-1">
+                        <span>Spesifikasi Sistem</span>
+                        <span>&rarr;</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Footer: Badges & Actions -->
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Laravel</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Tailwind CSS</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Alpine.js</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Playwright</span>
+                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Cypress</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="openProjectModal('jadwalin')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>Arsitektur Sistem</span>
+                </button>
+                <span class="text-slate-300">|</span>
+                <button onclick="openProjectModal('jadwalin')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>Rincian</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- PENGALAMAN 4: GENERAL MANAGER KMHE 2026 - Foto 1, 2, & 3       -->
+          <!-- ============================================================== -->
           <div class="project-card pm national bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between overflow-hidden">
             <div>
               <!-- Card Top Spec Bar -->
@@ -627,7 +814,9 @@
                   <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">
                     GENERAL MANAGER & PROJECT LEAD
                   </span>
-                  <span class="text-xs font-mono text-slate-500 font-medium">REKAYASA // 2026</span>
+                  <span class="text-xs font-mono text-emerald-800 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                    KOMPETISI NASIONAL // PUSPRESNAS BPTI
+                  </span>
                 </div>
                 <h3 class="text-2xl font-bold text-slate-900 tracking-tight flex items-center justify-between">
                   <span>Kontes Mobil Hemat Energi</span>
@@ -641,7 +830,7 @@
               <!-- Card Content -->
               <div class="p-6 space-y-4">
                 <p class="text-sm text-slate-600 leading-relaxed">
-                  Mengarahkan koordinasi strategis dan operasional tim delegasi Politeknik Negeri Malang selama fase riset, perancangan prototipe kendaraan hemat energi, hingga persiapan kompetisi nasional.
+                  Mengarahkan koordinasi strategis dan operasional tim delegasi Politeknik Negeri Malang selama fase riset, perancangan prototipe kendaraan hemat energi, hingga kompetisi nasional.
                 </p>
 
                 <!-- Technical Highlights -->
@@ -650,13 +839,44 @@
                     <svg class="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span><strong>Lolos Finalis Nasional:</strong> Berhasil memimpin tim melewati tahapan seleksi teknis ketat hingga lolos sebagai Finalis Nasional KMHE 2026 di Universitas Jember.</span>
+                    <span><strong>Lolos Finalis Nasional:</strong> Berhasil memimpin tim melewati tahapan seleksi teknis hingga lolos sebagai Finalis Nasional KMHE 2026 di Universitas Jember.</span>
                   </div>
                   <div class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
                     <span><strong>Kemitraan & Hibah Riset:</strong> Menjalin kerja sama eksternal dengan sponsor Dragonships serta kolaborasi pengadaan hibah alat laboratorium motor listrik dengan dosen.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo Proof Thumbnail with Switcher (Foto 1, 2, & 3) -->
+              <div class="px-6 pb-2">
+                <div class="space-y-2">
+                  <div id="kmhe-main-img-box" class="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 group cursor-pointer" onclick="openLightboxByImage('assets/images/kmhe-delegasi-nasional.jpg', 'KMHE 2026: Kontingen Delegasi Finalis Nasional di Universitas Jember', 'Umi Maharani bersama kontingen delegasi rekayasa Politeknik Negeri Malang dan dua prototipe mobil hemat energi di venue Universitas Jember.')" title="Klik untuk memperbesar foto dokumentasi">
+                    <img id="kmhe-preview-img" src="assets/images/kmhe-delegasi-nasional.jpg" alt="Dokumentasi KMHE" class="w-full h-44 object-cover object-center group-hover:scale-105 transition-smooth">
+                    <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/15 transition-smooth flex items-center justify-between p-3">
+                      <span class="px-2.5 py-1 rounded-md bg-white/95 text-slate-800 text-[11px] font-semibold shadow-xs flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <span id="kmhe-badge-text">Foto 3: Finalis KMHE</span>
+                      </span>
+                      <span class="text-[10px] font-mono bg-emerald-950/80 text-white px-2 py-0.5 rounded backdrop-blur-xs">Finalis Nasional</span>
+                    </div>
+                  </div>
+                  <!-- Switcher Buttons for Foto 1, 2, & 3 -->
+                  <div class="grid grid-cols-3 gap-2">
+                    <button type="button" onclick="setKmhePhoto(1)" id="kmhe-thumb-1" class="flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[10px] font-medium text-slate-600 transition-smooth cursor-pointer truncate">
+                      <span class="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0"></span>
+                      <span class="truncate">Foto 1: Pit Box</span>
+                    </button>
+                    <button type="button" onclick="setKmhePhoto(2)" id="kmhe-thumb-2" class="flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[10px] font-medium text-slate-600 transition-smooth cursor-pointer truncate">
+                      <span class="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0"></span>
+                      <span class="truncate">Foto 2: Roll-out</span>
+                    </button>
+                    <button type="button" onclick="setKmhePhoto(3)" id="kmhe-thumb-3" class="flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border-2 border-emerald-600 bg-emerald-50 text-[10px] font-medium text-emerald-900 transition-smooth cursor-pointer truncate">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
+                      <span class="truncate">Foto 3: Delegasi</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -670,75 +890,18 @@
                 <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">Partnership</span>
                 <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">National Finalist</span>
               </div>
-              <button onclick="openProjectModal('kmhe')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
-                <span>Rincian Spesifikasi</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- ============================================== -->
-          <!-- PENGALAMAN 4: LAB PROFILE JTI (Front-End Dev)  -->
-          <!-- ============================================== -->
-          <div class="project-card dev bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between overflow-hidden">
-            <div>
-              <!-- Card Top Spec Bar -->
-              <div class="p-6 border-b border-slate-100 bg-linear-to-r from-slate-100 to-transparent">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-slate-100 text-slate-800 border border-slate-200">
-                    FRONT-END DEVELOPER
-                  </span>
-                  <span class="text-xs font-mono text-slate-500 font-medium">PBL // 2025</span>
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 tracking-tight flex items-center justify-between">
-                  <span>Lab Profile Website</span>
-                  <span class="text-xs font-mono font-normal text-slate-400">Portal Akademik</span>
-                </h3>
-                <p class="text-xs text-corporate-700 font-medium mt-1">
-                  Laboratorium Information Learning Engineering Technology JTI Polinema
-                </p>
+              <div class="flex items-center gap-2">
+                <button onclick="openLightboxByImage('assets/images/kmhe-delegasi-nasional.jpg', 'KMHE 2026: Kontingen Delegasi Finalis Nasional di Universitas Jember', 'Umi Maharani bersama kontingen delegasi rekayasa Politeknik Negeri Malang dan dua prototipe mobil hemat energi di venue Universitas Jember.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Bukti Tim</span>
+                </button>
+                <span class="text-slate-300">|</span>
+                <button onclick="openProjectModal('kmhe')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>Rincian</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
               </div>
-
-              <!-- Card Content -->
-              <div class="p-6 space-y-4">
-                <p class="text-sm text-slate-600 leading-relaxed">
-                  Mengembangkan website profil laboratorium jurusan Teknologi Informasi untuk mendigitalisasi informasi fasilitas akademik, kurikulum praktikum, dan publikasi penelitian mahasiswa agar lebih mudah diakses.
-                </p>
-
-                <!-- Technical Highlights -->
-                <div class="space-y-2 bg-slate-50 p-4 rounded-xl border border-slate-200/80 text-xs text-slate-700">
-                  <div class="flex items-start gap-2">
-                    <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span><strong>Responsive UI/UX:</strong> Merancang antarmuka pengguna berbasis web responsif menggunakan HTML5, CSS3 murni, dan integrasi PHP.</span>
-                  </div>
-                  <div class="flex items-start gap-2">
-                    <svg class="w-4 h-4 text-corporate-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span><strong>Optimasi Aksesibilitas:</strong> Memastikan penataan hierarki konten yang ramah pengguna bagi civitas akademika dan mahasiswa baru.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card Footer: Badges & Actions -->
-            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
-              <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">HTML5</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">CSS3</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">PHP</span>
-                <span class="px-2 py-0.5 rounded bg-white text-slate-700 border border-slate-200">UI/UX</span>
-              </div>
-              <button onclick="openProjectModal('labprofile')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
-                <span>Rincian Spesifikasi</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
             </div>
           </div>
 
@@ -756,12 +919,10 @@
         <!-- Section Header -->
         <div class="max-w-3xl mb-12">
           <div class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-corporate-700 uppercase tracking-wider mb-2">
-            <span class="w-2 h-2 rounded-full bg-corporate-600"></span>
-            Tech Stack & Kemampuan Teruji
           </div>
           <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Keahlian & Penguasaan Teknologi</h2>
           <p class="text-sm text-slate-600 mt-2">
-            Matriks keterampilan teknik rekayasa terstruktur berdasarkan domain keilmuan dan praktik industri.
+            Keterampilan teknologi berdasarkan pengalaman selama 5 semester
           </p>
         </div>
 
@@ -779,7 +940,7 @@
                 </div>
                 <div>
                   <h3 class="font-bold text-slate-900 text-base">Web & Mobile Dev</h3>
-                  <span class="text-xs font-mono text-slate-500">ENGINEERING_CORE</span>
+                  <span class="text-xs font-mono text-slate-500">Software Development</span>
                 </div>
               </div>
 
@@ -812,7 +973,7 @@
             </div>
             
             <p class="text-xs text-slate-500 font-mono mt-6 pt-3 border-t border-slate-200">
-              Stack terpilih untuk pembuatan aplikasi B2B modular & performa tinggi.
+              Untuk pembuatan aplikasi B2B modular & performa tinggi.
             </p>
           </div>
 
@@ -827,7 +988,7 @@
                 </div>
                 <div>
                   <h3 class="font-bold text-slate-900 text-base">Data & Database</h3>
-                  <span class="text-xs font-mono text-slate-500">BUSINESS_INTELLIGENCE</span>
+                  <span class="text-xs font-mono text-slate-500">Business Intelligence</span>
                 </div>
               </div>
 
@@ -839,7 +1000,7 @@
                   <span class="w-2 h-2 rounded-full bg-indigo-600"></span> PostgreSQL
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white text-slate-800 border border-slate-200 shadow-2xs hover:border-corporate-400 transition-smooth">
-                  <span class="w-2 h-2 rounded-full bg-amber-500"></span> Power BI
+                  <span class="w-2 h-2 rounded-full bg-amber-500"></span> Pentaho
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white text-slate-800 border border-slate-200 shadow-2xs hover:border-corporate-400 transition-smooth">
                   <span class="w-2 h-2 rounded-full bg-orange-600"></span> RapidMiner
@@ -851,7 +1012,7 @@
             </div>
 
             <p class="text-xs text-slate-500 font-mono mt-6 pt-3 border-t border-slate-200">
-              Analisis data relasional, visualisasi metrik, dan pemodelan prediktif.
+              Analisis data relasional, visualisasi data, dan pemodelan prediktif.
             </p>
           </div>
 
@@ -866,7 +1027,7 @@
                 </div>
                 <div>
                   <h3 class="font-bold text-slate-900 text-base">QA, Tools & ERP</h3>
-                  <span class="text-xs font-mono text-slate-500">OPERATIONAL_CONTROL</span>
+                  <span class="text-xs font-mono text-slate-500">Quality Assurance</span>
                 </div>
               </div>
 
@@ -893,7 +1054,7 @@
             </div>
 
             <p class="text-xs text-slate-500 font-mono mt-6 pt-3 border-t border-slate-200">
-              Pengujian kualitas kontinu dan tata kelola sistem enterprise.
+              Quality Assurance dan Unit Acceptance Testing.
             </p>
           </div>
 
@@ -931,7 +1092,7 @@
                 </svg>
                 <span>Prestasi & Penghargaan Kompetitif</span>
               </h3>
-              <span class="text-xs font-mono text-slate-500">AWARDS_LOG</span>
+              <span class="text-xs font-mono text-slate-500">AWARDING</span>
             </div>
 
             <!-- Item 1: Finalis KMHE (2026) -->
@@ -940,10 +1101,17 @@
                 <h4 class="font-bold text-slate-900 text-sm">Finalis Nasional Kontes Mobil Hemat Energi (KMHE)</h4>
                 <span class="text-xs font-mono font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 shrink-0">2026</span>
               </div>
-              <p class="text-xs font-medium text-corporate-700 mt-0.5">Puspresnas / Balai Pengembangan Talenta Indonesia & Universitas Jember</p>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">Puspresnas / Balai Pengembangan Talenta Indonesia di Universitas Jember</p>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Membawa delegasi institusi Politeknik Negeri Malang meraih kualifikasi bergengsi di ajang inovasi efisiensi energi nasional.
+                Menjadi delegasi Politeknik Negeri Malang lolos seleksi hingga melaju ke babak Final Nasional Kompetisi Mobil Hemat Energi.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Kategori: Rekayasa Prototipe</span>
+                <button onclick="openLightboxByImage('assets/images/kmhe-delegasi-nasional.jpg', 'KMHE 2026: Kontingen Delegasi Finalis Nasional di Universitas Jember', 'Umi Maharani bersama kontingen delegasi rekayasa Politeknik Negeri Malang dan dua prototipe mobil hemat energi di venue Universitas Jember.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Bukti Tim</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
 
             <!-- Item 2: Beasiswa Unggulan (2025) -->
@@ -952,46 +1120,125 @@
                 <h4 class="font-bold text-slate-900 text-sm">Awardee Beasiswa Unggulan — Kemendikdasmen RI</h4>
                 <span class="text-xs font-mono font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 shrink-0">2025</span>
               </div>
-              <p class="text-xs font-medium text-corporate-700 mt-0.5">Kementerian Pendidikan Dasar dan Menengah Republik Indonesia</p>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">Pusat Layanan Pembiayaan Pendidikan (Puslapdik) Kemendikdasmen RI — Batch IV</p>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Terpilih sebagai penerima beasiswa penuh berskala nasional berdasarkan keunggulan akademik, rekam jejak kepemimpinan, dan portofolio inovasi.
+                Terpilih sebagai penerima beasiswa penuh tingkat nasional berdasarkan keunggulan akademik, rekam jejak kepemimpinan, dan portofolio inovasi pada bidang teknologi.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Beasiswa Penuh Kemendikdasmen</span>
+                <button onclick="openLightboxByImage('assets/images/beasiswa-unggulan-stage.jpg', 'Pembekalan & Penandatanganan Kontrak Beasiswa Unggulan 2025', 'Dokumentasi resmi Umi Maharani saat penandatanganan kontrak beasiswa penuh Kemendikdasmen Batch IV.')" class="text-xs font-semibold text-amber-800 hover:text-amber-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Dokumentasi saat pendandatanganan Kontrak</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
 
-            <!-- Item 3: Juara 1 Esai Nasional (2025) -->
+            <!-- Item 3: Juara 1 Esai Nasional UNISLA (2025) -->
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
               <div class="flex justify-between items-start gap-2">
-                <h4 class="font-bold text-slate-900 text-sm">Juara 1 Lomba Esai Tingkat Nasional</h4>
+                <h4 class="font-bold text-slate-900 text-sm">Juara 1 Lomba Esai Tingkat Nasional (SELEGTIF)</h4>
+                <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 shrink-0">31 Mei 2025</span>
+              </div>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">DPM FAI Universitas Islam Lamongan (UNISLA) — No: 004/03/FAI-UNISLA/05/2025</p>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Meraih predikat Juara 1 setelah menyisihkan puluhan delegasi universitas nasional melalui gagasan inovatif & analisis opini berbasis data.
+              </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Sertifikat</span>
+                <button onclick="openLightboxByImage('assets/images/sertifikat-esai-nasional.jpg', 'Sertifikat Juara 1 Lomba Esai Nasional — DPM FAI UNISLA', 'Sertifikat resmi Penghargaan Juara 1 Nasional Semarak Legislatif FAI UNISLA Lamongan.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Lihat Sertifikat</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Item 4: Juara 1 Esai Forum Diskusi Ilmiah (2025) -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+              <div class="flex justify-between items-start gap-2">
+                <h4 class="font-bold text-slate-900 text-sm">1st Place Essay Forum Diskusi Ilmiah Polinema</h4>
                 <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 shrink-0">2025</span>
               </div>
-              <p class="text-xs font-medium text-corporate-700 mt-0.5">DPM FAI UNISLA (Universitas Islam Lamongan)</p>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">UKM Pendidikan dan Penalaran Politeknik Negeri Malang</p>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Meraih predikat Juara 1 setelah menyisihkan berbagai delegasi universitas nasional melalui ketajaman analisis opini berbasis data serta penulisan kritis.
+                Meraih juara pertama pada kompetisi esai ilmiah yang diadakan oleh UKM Pendidikan dan Penalaran Politeknik Negeri Malang.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Penalaran & Riset Ilmiah</span>
+                <button onclick="openLightboxByImage('assets/images/forum-diskusi-ilmiah-2025.jpg', 'Dokumentasi Juara 1 Esai Forum Diskusi Ilmiah 2025', 'Apresiasi Juara 1 Esai Forum Diskusi Ilmiah UKM Pendidikan dan Penalaran Polinema.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Dokumentasi</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
 
-            <!-- Item 4: Business Plan Competition (2024-2025) -->
+            <!-- Item 5: UKBI Skor 630 Predikat Unggul (2024-2026) -->
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
               <div class="flex justify-between items-start gap-2">
-                <h4 class="font-bold text-slate-900 text-sm">Peserta Business Plan Competition & Penulisan Populer</h4>
-                <span class="text-xs font-mono text-slate-500 shrink-0">2024 – 2025</span>
+                <h4 class="font-bold text-slate-900 text-sm">Uji Kemahiran Berbahasa Indonesia (UKBI) — Predikat Unggul</h4>
+                <span class="text-xs font-mono font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 shrink-0">Skor 630</span>
               </div>
-              <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                Merancang perencanaan bisnis inovatif, riset kelayakan finansial, dan pengembangan rancangan MVP (Minimum Viable Product).
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">Badan Pengembangan dan Pembinaan Bahasa Kemendikbudristek RI</p>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Meraih skor kemahiran tinggi 630 (Predikat Unggul), mencerminkan kemampuan komunikasi lisan dan tulisan tingkat tinggi untuk kebutuhan akademis dan profesional.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Sertifikat Nasional Badan Bahasa</span>
+                <button onclick="openLightboxByImage('assets/images/sertifikat-ukbi.jpg', 'Sertifikat Resmi UKBI — Skor 630 (Predikat Unggul)', 'Sertifikat resmi dari Badan Pengembangan dan Pembinaan Bahasa Kemendikbudristek RI.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Lihat Sertifikat</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Item 6: World Book Day BI Malang (2025) -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+              <div class="flex justify-between items-start gap-2">
+                <h4 class="font-bold text-slate-900 text-sm">Lomba Menulis Artikel World Book Day 2025</h4>
+                <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 shrink-0">Mei 2025</span>
+              </div>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">Perpustakaan Kantor Perwakilan Bank Indonesia Malang</p>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Partisipasi sebagai peserta kompetisi penulisan artikel ilmiah populer tingkat umum dalam rangka perayaan World Book Day 2025.
+              </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Bank Indonesia KPw Malang</span>
+                <button onclick="openLightboxByImage('assets/images/sertifikat-bi-malang.jpg', 'Sertifikat Penghargaan World Book Day 2025 — Bank Indonesia Malang', 'Sertifikat penghargaan keikutsertaan lomba artikel umum dari Bank Indonesia.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Lihat Sertifikat</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Item 7: Semar Entrepreneur UNS (2024) -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+              <div class="flex justify-between items-start gap-2">
+                <h4 class="font-bold text-slate-900 text-sm">Peserta Semar Entrepreneur 2024</h4>
+                <span class="text-xs font-mono font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 shrink-0">Okt 2024</span>
+              </div>
+              <p class="text-xs font-medium text-corporate-700 mt-0.5">Badan Eksekutif Mahasiswa Universitas Negeri Sebelas Maret (UNS)</p>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Merancang perencanaan bisnis inovatif, riset kelayakan pasar, dan perumusan MVP dalam program kewirausahaan nasional UNS.
+              </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">BEM UNS Surakarta</span>
+                <button onclick="openLightboxByImage('assets/images/sertifikat-semar-uns.jpg', 'Sertifikat Semar Entrepreneur 2024 — BEM UNS', 'Sertifikat Business Plan Competition Universitas Negeri Sebelas Maret 2024.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Lihat Sertifikat</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Column 2: Rekam Jejak Organisasi (Col 6) -->
+          <!-- Column 2: Rekam Jejak Organisasi & Peran Event (Col 6) -->
           <div class="lg:col-span-6 space-y-4">
             <div class="flex items-center justify-between pb-3 border-b border-slate-200">
               <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
                 <svg class="w-5 h-5 text-corporate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                 </svg>
-                <span>Kepemimpinan Organisasi</span>
+                <span>Kepemimpinan Organisasi & Peran Event</span>
               </h3>
-              <span class="text-xs font-mono text-slate-500">LEADERSHIP_LOG</span>
+              <span class="text-xs font-mono text-slate-500">LEADERSHIP & EVENTS</span>
             </div>
 
             <!-- Org 1: Manager Non-Teknis Tunas Autron -->
@@ -999,47 +1246,611 @@
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="font-bold text-slate-900 text-sm">Manager Non-Technical Division</h4>
-                  <p class="text-xs font-medium text-corporate-700">Tunas Autron Team (Komunitas Riset Kendaraan)</p>
+                  <p class="text-xs font-medium text-corporate-700">Tunas Autron Team (Komunitas Riset Kendaraan Hemat energi)</p>
                 </div>
                 <span class="text-xs font-mono font-medium text-corporate-700 bg-corporate-50 px-2 py-0.5 rounded border border-corporate-200 shrink-0">2025 – 2026</span>
               </div>
               <ul class="text-xs text-slate-600 mt-3 space-y-1.5 list-disc list-inside">
                 <li>Memimpin dan mengoordinasikan seluruh sub-divisi non-teknis (administrasi, keuangan, humas, desain & dokumentasi).</li>
-                <li>Menyusun strategi kemitraan eksternal dan inisiasi sponsor bersama <em>Dragonships</em>.</li>
-                <li>Membangun kolaborasi internal pengadaan hibah alat praktikum motor listrik.</li>
+                <li>Menyusun strategi kemitraan eksternal dan sponsor bersama <em>Dragonships</em>.</li>
+                <li>Membangun kolaborasi pengadaan hibah alat untuk perancangan kendaraan dengan dosen.</li>
               </ul>
             </div>
 
-            <!-- Org 2: Organizing Committee UKM Pendidikan & Penalaran -->
+            <!-- Event 2: Master of Ceremony Techno Fair 2025 -->
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Organizing Committee — Fungsionaris Penalaran</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Master of Ceremony (MC) Techno Fair & Seminar 2025</h4>
                   <p class="text-xs font-medium text-corporate-700">UKM Pendidikan dan Penalaran Politeknik Negeri Malang</p>
                 </div>
-                <span class="text-xs font-mono text-slate-500 shrink-0">2025 – 2026</span>
+                <span class="text-xs font-mono font-semibold text-corporate-700 bg-corporate-50 px-2 py-0.5 rounded border border-corporate-200 shrink-0">Agustus 2025</span>
               </div>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                Bertanggung jawab dalam merancang Forum Diskusi Ilmiah dan membimbing penulisan proposal Program Kreativitas Mahasiswa (PKM) internal Polinema.
+                Memandu jalannya acara Lomba Karya Tulis Ilmiah Nasional (LKTIN) Techno Fair and Seminar 2025.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Public Speaking & Event Hosting</span>
+                <button onclick="openLightboxByImage('assets/images/mc-techno-fair-2025.jpg', 'Master of Ceremony Techno Fair & Seminar 2025', 'Master of Ceremony Techno Fair dan Seminar UKM Pendidikan dan Penalaran.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Dokumentasi</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
 
-            <!-- Org 3: Ketua OSIS SMAN 1 Singgahan & Sekum HIMO -->
+            <!-- Event 3: Executive Secretary Try Out SNBT 2025 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Executive Secretary Try Out SNBT 2025</h4>
+                  <p class="text-xs font-medium text-corporate-700">UKM Pendidikan dan Penalaran Politeknik Negeri Malang</p>
+                </div>
+                <span class="text-xs font-mono text-slate-500 shrink-0">2025</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Mengoordinasikan alur kerja administratif dan logistik simulasi ujian masuk perguruan tinggi nasional, menyusun timeline kerja tim, serta memastikan arsip berkas tersusun rapi.
+              </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Manajemen Administrasi & Logistik</span>
+                <button onclick="openLightboxByImage('assets/images/tryout-snbt-2025.jpg', 'Kepanitiaan Try Out SNBT 2025 UKM Pendidikan dan Penalaran', 'Dokumentasi panitia Try Out SNBT bersama seluruh panitia pelaksana.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Foto Panitia</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Event 4: Moderator Penelitian Ilmiah 2025 -->
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Moderator Sesi Penelitian Ilmiah 2025</h4>
+                  <p class="text-xs font-medium text-corporate-700">UKM Pendidikan dan Penalaran Politeknik Negeri Malang</p>
+                </div>
+                <span class="text-xs font-mono text-slate-500 shrink-0">2025</span>
+              </div>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Sebagai moderator forum penelitian ilmiah mahasiswa, memandu jalannya acara dan memfasilitasi sesi tanya-jawab.
+              </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-400">Moderasi Forum Ilmiah</span>
+                <button onclick="openLightboxByImage('assets/images/moderator-penelitian-ilmiah.jpg', 'Moderator Penelitian Ilmiah UKM Pendidikan dan Penalaran 2025', 'Menjadi Moderator pada Penelitian Ilmiah yang diikuti oleh Organizing Committe dan Steering Committe UKM Pendidikan dan Penalaran.')" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Dokumentasi Acara</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Org 5: Ketua OSIS SMAN 1 Singgahan & Sekum HIMO -->
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs hover:border-corporate-300 transition-smooth">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="font-bold text-slate-900 text-sm">Ketua OSIS & Sekretaris Umum HIMO Tuban</h4>
-                  <p class="text-xs font-medium text-slate-500">SMA Negeri 1 Singgahan & Musyawarah OSIS Kab. Tuban</p>
+                  <p class="text-xs font-medium text-slate-500">SMA Negeri 1 Singgahan & Himpunan Musyawarah OSIS Kab. Tuban</p>
                 </div>
                 <span class="text-xs font-mono text-slate-500 shrink-0">2022 – 2024</span>
               </div>
               <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                 Memimpin 40 staf pengurus, mengelola anggaran kas kegiatan rutin, serta memfasilitasi simulasi pemilu sekolah sesuai standar KPU bagi pemilih pemula.
               </p>
+              <div class="mt-3 pt-3 border-t border-slate-100 flex flex-wrap items-center gap-2">
+                <button onclick="openLightboxByImage('assets/images/sertifikat-ketua-osis.jpg', 'Sertifikat Penghargaan Ketua OSIS SMAN 1 Singgahan', 'Sertifikat penghargaan kepengurusan Ketua OSIS periode 2022/2023.')" class="text-[11px] font-semibold text-corporate-700 hover:underline inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Sertifikat Ketua OSIS</span>
+                </button>
+                <span class="text-slate-300">•</span>
+                <button onclick="openLightboxByImage('assets/images/sertifikat-sekum-himo.jpg', 'Sertifikat Sekretaris Umum HIMO Tuban', 'Sertifikat Cabang Dinas Pendidikan Provinsi Jawa Timur Wilayah Bojonegoro-Tuban.')" class="text-[11px] font-semibold text-corporate-700 hover:underline inline-flex items-center gap-1 cursor-pointer">
+                  <span>📜 Sertifikat Sekum HIMO</span>
+                </button>
+                <span class="text-slate-300">•</span>
+                <button onclick="openLightboxByImage('assets/images/osis-pelantikan-tuban.jpg', 'Pelantikan & Reorganisasi Pengurus OSIS Kabupaten Tuban', 'Dokumentasi saat pelantikan pengurus HIMO Kabupaten Tuban.')" class="text-[11px] font-semibold text-corporate-700 hover:underline inline-flex items-center gap-1 cursor-pointer">
+                  <span>📸 Foto Pelantikan</span>
+                </button>
+              </div>
             </div>
 
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- GALLERY & EVIDENCE SECTION (DOKUMENTASI ASLI CANVA)           -->
+    <!-- ============================================================== -->
+    <section id="gallery" class="py-16 lg:py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-corporate-700 uppercase tracking-wider mb-2">
+              <span class="w-2 h-2 rounded-full bg-corporate-600"></span>
+              Bukti Portofolio
+            </div>
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Galeri & Proyek</h2>
+            <p class="text-sm text-slate-600 mt-1 max-w-2xl">
+              Dokumentasi selama 3 tahun berkuliah dengan pengalaman pembuatan proyek, prestasi yang diraih, organisasi dan kepanitiaan
+            </p>
+          </div>
+
+          <!-- Gallery Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-1.5 p-1 bg-slate-100 rounded-xl border border-slate-200 shadow-2xs text-xs font-sans">
+            <button onclick="filterGallery('all')" id="gal-filter-all" class="gal-btn px-3 py-1.5 rounded-lg font-medium text-white bg-corporate-700 transition-smooth">
+              Semua (19)
+            </button>
+            <button onclick="filterGallery('pbl')" id="gal-filter-pbl" class="gal-btn px-3 py-1.5 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-smooth">
+              Proyek PBL (4)
+            </button>
+            <button onclick="filterGallery('kmhe')" id="gal-filter-kmhe" class="gal-btn px-3 py-1.5 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-smooth">
+              KMHE 2026 (3)
+            </button>
+            <button onclick="filterGallery('prestasi')" id="gal-filter-prestasi" class="gal-btn px-3 py-1.5 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-smooth">
+              Sertifikat Prestasi (4)
+            </button>
+            <button onclick="filterGallery('event')" id="gal-filter-event" class="gal-btn px-3 py-1.5 rounded-lg font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-smooth">
+              Event & Organisasi (8)
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="gallery-grid">
+          
+          <!-- Item 0: PBL 1 - Web Profile Team (Almamater) -->
+          <div class="gallery-card pbl bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(0)">
+              <img src="assets/images/pbl-team-cert.jpg" alt="Tim Pengembang Web Profile Laboratorium JTI" class="w-full h-full object-cover object-center group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-700 text-white shadow-xs">Proyek PBL 1</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Semester 3</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Web Profile Lab JTI — Tim Mahasiswa SIB</h4>
+                <p class="text-xs text-corporate-700 font-medium">JTI Polinema & Indosat Wall</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Bersama tim pengembang dalam proyek pembuatan Web Profile Laboratorium Information and Learning Engineering Technology.</p>
+              </div>
+              <button onclick="openLightbox(0)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 1: PBL 1 - Web Profile Evaluation -->
+          <div class="gallery-card pbl bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(1)">
+              <img src="assets/images/pbl-team-presentation.jpg" alt="Presentasi Proyek Web Profile Lab JTI" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-700 text-white shadow-xs">Proyek PBL 1</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Semester 3</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Evaluasi & Capaian Web Profile</h4>
+                <p class="text-xs text-corporate-700 font-medium">Tim Front-End Developer SIB</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Bersama tim pengembang dalam proyek pembuatan Web Profile Laboratorium Information and Learning Engineering Technology</p>
+              </div>
+              <button onclick="openLightbox(1)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 2: PBL 2 - Arenahub Team Standing (Foto 4) -->
+          <div class="gallery-card pbl bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(2)">
+              <img src="assets/images/arenahub-team-standing.jpg" alt="Showcase Aplikasi Arenahub" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-blue-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-blue-700 text-white shadow-xs">Proyek PBL 2</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Foto 4</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Tim Arenahub — Showcase Produk Aplikasi</h4>
+                <p class="text-xs text-blue-700 font-medium">JTI Polinema & Indosat Wall</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Bersama tim pengembang dalam pembuatan proyek aplikasi ArenaHub, aplikasi booking lapangan menggunakan Flutter, Dart dan terintegrasi dengan Payment Gateway.</p>
+              </div>
+              <button onclick="openLightbox(2)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3: PBL 2 - Arenahub UI Demonstration (Foto 5) -->
+          <div class="gallery-card pbl bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(3)">
+              <img src="assets/images/arenahub-team-showcase.jpg" alt="Demonstrasi Dashboard Arenahub" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-blue-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-blue-700 text-white shadow-xs">Proyek PBL 2</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Foto 5</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Demonstrasi Antarmuka & Prototipe Arenahub</h4>
+                <p class="text-xs text-blue-700 font-medium">Tim Mahasiswa Sistem Informasi Bisnis</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Bersama tim pengembang aplikasi android ArenaHub.</p>
+              </div>
+              <button onclick="openLightbox(3)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 4: KMHE 2026 - Kontingen Delegasi Nasional (Foto 3) -->
+          <div class="gallery-card kmhe bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(4)">
+              <img src="assets/images/kmhe-delegasi-nasional.jpg" alt="Kontingen Delegasi KMHE 2026 di Universitas Jember" class="w-full h-full object-cover object-center group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-emerald-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-emerald-600 text-white shadow-xs">KMHE 2026</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Foto 3</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Kontingen Delegasi Finalis Nasional KMHE</h4>
+                <p class="text-xs text-emerald-700 font-medium">Universitas Jember — Puspresnas BPTI</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Umi Maharani bersama seluruh kontingen rekayasa Polinema serta dua prototipe mobil hemat energi.</p>
+              </div>
+              <button onclick="openLightbox(4)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 5: KMHE 2026 - Red Carpet Rollout (Foto 2) -->
+          <div class="gallery-card kmhe bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(5)">
+              <img src="assets/images/kmhe-rollout-carpet.jpg" alt="Roll-Out Prototipe Tunas Autron di Red Carpet" class="w-full h-full object-cover object-center group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-emerald-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-emerald-600 text-white shadow-xs">KMHE 2026</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Foto 2</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Roll-Out Prototipe Tunas Autron — Red Carpet</h4>
+                <p class="text-xs text-emerald-700 font-medium">Defile Resmi Kontingen Polinema</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Prosesi defile dan perkenalan prototipe kendaraan hemat energi Tunas Autron di hadapan panitia nasional.</p>
+              </div>
+              <button onclick="openLightbox(5)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 6: KMHE 2026 - Pit Box Paddock (Foto 1) -->
+          <div class="gallery-card kmhe bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(6)">
+              <img src="assets/images/kmhe-pit-team.jpg" alt="Tim Riset Tunas Autron di Pit Box Paddock" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-emerald-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-emerald-600 text-white shadow-xs">KMHE 2026</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Foto 1</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Tim Riset & Manajerial di Pit Box Paddock</h4>
+                <p class="text-xs text-emerald-700 font-medium">Paddock Sirkuit KMHE 2026 Jember</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Koordinasi kesiapan teknis kendaraan efisiensi energi bersama tim Tunas Autron di paddock kompetisi.</p>
+              </div>
+              <button onclick="openLightbox(6)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 7: Beasiswa Unggulan Stage -->
+          <div class="gallery-card prestasi bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(7)">
+              <img src="assets/images/beasiswa-unggulan-stage.jpg" alt="Beasiswa Unggulan Kemendikdasmen" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-amber-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-500 text-slate-950 shadow-xs">Prestasi</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Kontrak Beasiswa Unggulan 2025</h4>
+                <p class="text-xs text-amber-800 font-medium">Kemendikdasmen RI — Batch IV</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Pembekalan dan penandatanganan kontrak beasiswa penuh di Puslapdik.</p>
+              </div>
+              <button onclick="openLightbox(7)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 8: Sertifikat Esai Nasional UNISLA -->
+          <div class="gallery-card prestasi bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(8)">
+              <img src="assets/images/sertifikat-esai-nasional.jpg" alt="Sertifikat Juara 1 Esai Nasional" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-500 text-slate-950 shadow-xs">Juara 1 Nasional</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Mei 2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Juara 1 Lomba Esai Nasional</h4>
+                <p class="text-xs text-corporate-700 font-medium">DPM FAI UNISLA Lamongan</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Sertifikat resmi kompetisi esai nasional gagasan tata kelola transparansi.</p>
+              </div>
+              <button onclick="openLightbox(8)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 9: UKBI Skor 630 -->
+          <div class="gallery-card prestasi bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(9)">
+              <img src="assets/images/sertifikat-ukbi.jpg" alt="Sertifikat UKBI 630" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-emerald-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-emerald-600 text-white shadow-xs">Skor 630</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Unggul</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Sertifikat Resmi Kemahiran UKBI</h4>
+                <p class="text-xs text-emerald-800 font-medium">Badan Bahasa Kemendikbudristek</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Kemahiran berbahasa lisan & tulis tingkat tinggi untuk profesi & akademik.</p>
+              </div>
+              <button onclick="openLightbox(9)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 10: Forum Diskusi Ilmiah FDI -->
+          <div class="gallery-card prestasi bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(10)">
+              <img src="assets/images/forum-diskusi-ilmiah-2025.jpg" alt="Forum Diskusi Ilmiah 2025" class="w-full h-full object-cover object-center group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-500 text-slate-950 shadow-xs">Juara 1 Esai</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Juara 1 Esai Forum Diskusi Ilmiah</h4>
+                <p class="text-xs text-corporate-700 font-medium">UKM Pendidikan & Penalaran</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Apresiasi peringkat pertama penulisan ilmiah berbasis bukti riset.</p>
+              </div>
+              <button onclick="openLightbox(10)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 11: MC Techno Fair -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(11)">
+              <img src="assets/images/mc-techno-fair-2025.jpg" alt="Master of Ceremony Techno Fair" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">MC Event</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Agustus 2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">MC Techno Fair & Seminar 2025</h4>
+                <p class="text-xs text-corporate-700 font-medium">Gedung Mesin & Aula Polinema</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Memandu seminar rekayasa teknologi dan pameran inovasi ratusan audiens.</p>
+              </div>
+              <button onclick="openLightbox(11)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 12: Try Out SNBT 2025 -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(12)">
+              <img src="assets/images/tryout-snbt-2025.jpg" alt="Try Out SNBT 2025" class="w-full h-full object-cover object-center group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">Kepanitiaan</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Executive Secretary Try Out SNBT</h4>
+                <p class="text-xs text-corporate-700 font-medium">Auditorium Polinema</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Pengelolaan administrasi & operasional simulasi ujian masuk PTN ribuan peserta.</p>
+              </div>
+              <button onclick="openLightbox(12)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 13: Moderator Penelitian Ilmiah -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(13)">
+              <img src="assets/images/moderator-penelitian-ilmiah.jpg" alt="Moderator Penelitian Ilmiah" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">Moderator</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Moderator Penelitian Ilmiah</h4>
+                <p class="text-xs text-corporate-700 font-medium">UKM Pendidikan & Penalaran</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Memoderatori sesi paparan karya ilmiah mahasiswa dan tanya jawab interaktif.</p>
+              </div>
+              <button onclick="openLightbox(13)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 14: World Book Day BI Malang -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(14)">
+              <img src="assets/images/sertifikat-bi-malang.jpg" alt="Sertifikat BI Malang" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-500 text-slate-950 shadow-xs">Sertifikat</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Mei 2025</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">World Book Day 2025 — Bank Indonesia</h4>
+                <p class="text-xs text-corporate-700 font-medium">Perpustakaan KPw BI Malang</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Sertifikat apresiasi penulisan artikel ilmiah populer kategori umum.</p>
+              </div>
+              <button onclick="openLightbox(14)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 15: Semar Entrepreneur UNS -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(15)">
+              <img src="assets/images/sertifikat-semar-uns.jpg" alt="Sertifikat Semar Entrepreneur" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-amber-500 text-slate-950 shadow-xs">Sertifikat</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Okt 2024</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Semar Entrepreneur 2024</h4>
+                <p class="text-xs text-corporate-700 font-medium">BEM Universitas Sebelas Maret</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Kompetisi bisnis & inkubasi kewirausahaan perguruan tinggi nasional.</p>
+              </div>
+              <button onclick="openLightbox(15)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 16: Sertifikat Ketua OSIS -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(16)">
+              <img src="assets/images/sertifikat-ketua-osis.jpg" alt="Sertifikat Ketua OSIS" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">Kepemimpinan</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">2022/2023</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Sertifikat Ketua OSIS SMA</h4>
+                <p class="text-xs text-corporate-700 font-medium">SMAN 1 Singgahan</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Sertifikat penghargaan kepengurusan Ketua OSIS periode 2022/2023.</p>
+              </div>
+              <button onclick="openLightbox(16)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 17: Sertifikat Sekum HIMO -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(17)">
+              <img src="assets/images/sertifikat-sekum-himo.jpg" alt="Sertifikat Sekum HIMO" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">Sekretaris Umum</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">Tuban</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Sertifikat Sekum Forum OSIS Tuban</h4>
+                <p class="text-xs text-corporate-700 font-medium">Cabdin Pendidikan Jatim</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Sertifikat Cabang Dinas Pendidikan Provinsi Jawa Timur Wilayah Bojonegoro-Tuban.</p>
+              </div>
+              <button onclick="openLightbox(17)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 18: Foto Pelantikan OSIS Tuban -->
+          <div class="gallery-card event bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-2xs hover:shadow-md hover:border-corporate-300 transition-smooth flex flex-col justify-between group">
+            <div class="relative overflow-hidden cursor-pointer bg-slate-900 h-48" onclick="openLightbox(18)">
+              <img src="assets/images/osis-pelantikan-tuban.jpg" alt="Pelantikan Forum OSIS Tuban" class="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth">
+              <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-smooth flex items-center justify-center">
+                <span class="w-10 h-10 rounded-full bg-white/90 text-corporate-700 flex items-center justify-center shadow-lg group-hover:scale-110 transition-smooth">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-corporate-600 text-white shadow-xs">Pelantikan</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900/80 text-white backdrop-blur-xs">HIMO Tuban</span>
+            </div>
+            <div class="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm leading-snug">Pelantikan Forum OSIS Kabupaten Tuban</h4>
+                <p class="text-xs text-corporate-700 font-medium">Reorganisasi Pengurus HIMO</p>
+                <p class="text-xs text-slate-500 mt-1 leading-relaxed">Momen prosesi pelantikan pengurus Himpunan Musyawarah OSIS se-Kabupaten Tuban.</p>
+              </div>
+              <button onclick="openLightbox(18)" class="text-xs font-semibold text-corporate-700 hover:text-corporate-900 inline-flex items-center gap-1 pt-2 border-t border-slate-200 cursor-pointer">
+                <span>Perbesar & Detail Bukti &rarr;</span>
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1061,14 +1872,14 @@
             <div class="lg:col-span-7 space-y-4">
               <div class="inline-flex items-center gap-2 text-xs font-mono font-semibold text-corporate-700 uppercase tracking-wider">
                 <span class="w-2 h-2 rounded-full bg-corporate-600"></span>
-                Inisiasi Kerja Sama & Magang
+                Open to Work & Internship
               </div>
               <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 Siap Bertumbuh dan Berkolaborasi bersama
               </h2>
               <p class="text-base text-slate-600 leading-relaxed max-w-xl">
                 Saya sedang membuka peluang untuk internship di posisi <strong class="text-slate-800">Front-End Web Developer</strong>, <strong class="text-slate-800">E Governance</strong>, 
-                atau <strong class="text-slate-800">Business Systems Analyst</strong>. Saya siap belajar, beradaptasi cepat, dan ikut berkontribusi dalam proyek-proyek di perusahaan Anda.
+                atau <strong class="text-slate-800">Business Analyst dan Systems Analyst</strong>. Saya siap belajar, beradaptasi cepat, dan ikut berkontribusi dalam proyek-proyek di perusahaan Anda.
 
               <!-- Quick Action Buttons -->
               <div class="flex flex-wrap items-center gap-3 pt-3">
@@ -1076,14 +1887,14 @@
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                   </svg>
-                  <span>Kirim Email Langsung</span>
+                  <span>Email</span>
                 </a>
 
                 <a href="https://wa.me/6282313237244" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-smooth">
                   <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                   </svg>
-                  <span>Hubungi via WhatsApp</span>
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </div>
@@ -1092,7 +1903,7 @@
             <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
               
               <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-                <span class="text-xs font-mono font-semibold text-slate-500">KOMUNIKASI RESMI</span>
+                <span class="text-xs font-mono font-semibold text-slate-500">CONTACT</span>
                 <button onclick="copyEmail()" id="copyBtn" class="text-xs font-mono text-corporate-700 hover:text-corporate-900 bg-corporate-50 px-2.5 py-1 rounded border border-corporate-200 flex items-center gap-1 cursor-pointer">
                   <span id="copyText">Salin Email</span>
                 </button>
@@ -1136,7 +1947,7 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="text-[11px] font-mono text-slate-500 uppercase block">GitHub Repository</span>
+                  <span class="text-[11px] font-mono text-slate-500 uppercase block">GitHub</span>
                   <a href="https://github.com/Maharaaniii" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-corporate-700 hover:underline">
                     github.com/Maharaaniii
                   </a>
@@ -1151,7 +1962,7 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="text-[11px] font-mono text-slate-500 uppercase block">Portofolio Presentasi</span>
+                  <span class="text-[11px] font-mono text-slate-500 uppercase block">Portfolio</span>
                   <a href="https://canva.link/lpgy4h6t260jcdu" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-corporate-700 hover:underline">
                     canva.link/lpgy4h6t260jcdu
                   </a>
@@ -1279,10 +2090,10 @@
 
           <h5 class="font-bold text-slate-900 uppercase font-mono tracking-wider text-[11px] border-b pb-1 pt-2">Pengalaman Utama (Terbaru ke Terlama)</h5>
           <ul class="list-disc list-inside space-y-1 text-slate-600">
-            <li><strong>Full-Stack Developer (2026):</strong> Jadwalin - B2B Automated Roster & Timesheet System.</li>
-            <li><strong>Project Manager (2026):</strong> Arenahub - Sport Venue Booking & Business Information System.</li>
+            <li><strong>Full-Stack Developer (2026):</strong> Jadwalin - B2B Automated Roster & Timesheet System (Proyek PBL 3).</li>
+            <li><strong>Project Manager (2026):</strong> Arenahub - Sport Venue Booking & Business Information System (Proyek PBL 2).</li>
             <li><strong>General Manager (2026):</strong> Tunas Autron Team - Finalis Nasional KMHE 2026 Jember.</li>
-            <li><strong>Front-End Developer (2025):</strong> Laboratorium JTI Polinema Profile Website.</li>
+            <li><strong>Front-End Developer (Semester 3):</strong> Website Profile Laboratorium JTI Polinema (Proyek PBL 1).</li>
           </ul>
 
           <h5 class="font-bold text-slate-900 uppercase font-mono tracking-wider text-[11px] border-b pb-1 pt-2">Prestasi & Penghargaan (Terbaru ke Terlama)</h5>
@@ -1348,32 +2159,129 @@
   </div>
 
   <!-- ============================================================== -->
+  <!-- MODAL: IMAGE & BUKTI LIGHTBOX (INTERACTIVE)                   -->
+  <!-- ============================================================== -->
+  <div id="imageLightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 transition-all duration-300">
+    <div class="relative bg-white rounded-2xl max-w-4xl w-full border border-slate-700/30 shadow-2xl overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Lightbox Header -->
+      <div class="px-5 py-3.5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+        <div class="flex items-center gap-3 min-w-0 pr-4">
+          <span id="lightboxBadge" class="px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold bg-corporate-600 text-white shrink-0 tracking-wide">
+            DOKUMENTASI
+          </span>
+          <h3 id="lightboxTitle" class="text-sm sm:text-base font-bold text-white truncate">
+            Bukti Portofolio & Sertifikat
+          </h3>
+          <span id="lightboxCounter" class="text-xs font-mono text-slate-400 shrink-0 hidden sm:inline">
+            1 / 14
+          </span>
+        </div>
+        
+        <div class="flex items-center gap-2 shrink-0">
+          <a id="lightboxFullLink" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" title="Buka gambar ukuran penuh di tab baru">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+          <button onclick="closeLightbox()" class="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors cursor-pointer" title="Tutup (Esc)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox Image Stage with Previous / Next Buttons -->
+      <div class="relative bg-slate-950 flex-1 flex items-center justify-center overflow-hidden min-h-[260px] sm:min-h-[420px] max-h-[65vh]">
+        <img id="lightboxImage" src="" alt="Bukti Portofolio" class="max-h-[65vh] w-auto max-w-full object-contain mx-auto select-none transition-all duration-200">
+        
+        <!-- Navigation Buttons -->
+        <button onclick="prevLightbox(event)" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-corporate-600 text-white flex items-center justify-center shadow-lg border border-slate-700/50 transition-all hover:scale-105 cursor-pointer backdrop-blur-xs" title="Foto Sebelumnya (Panah Kiri)">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+
+        <button onclick="nextLightbox(event)" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-corporate-600 text-white flex items-center justify-center shadow-lg border border-slate-700/50 transition-all hover:scale-105 cursor-pointer backdrop-blur-xs" title="Foto Selanjutnya (Panah Kanan)">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Lightbox Caption & Details Bar -->
+      <div class="p-4 sm:p-5 bg-white border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="space-y-1 pr-2">
+          <div class="flex items-center gap-2">
+            <span id="lightboxDate" class="text-[11px] font-mono text-corporate-700 font-semibold bg-corporate-50 px-2 py-0.5 rounded border border-corporate-200">
+              Periode
+            </span>
+            <span id="lightboxCategory" class="text-xs text-slate-500 font-mono">
+              Kategori
+            </span>
+          </div>
+          <p id="lightboxCaption" class="text-xs sm:text-sm text-slate-700 leading-relaxed font-sans">
+            Deskripsi rincian dokumentasi dan capaian autentik.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <button onclick="prevLightbox(event)" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-smooth cursor-pointer sm:hidden flex items-center gap-1">
+            &larr; Prev
+          </button>
+          <button onclick="nextLightbox(event)" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-smooth cursor-pointer sm:hidden flex items-center gap-1">
+            Next &rarr;
+          </button>
+          <button onclick="closeLightbox()" class="px-4 py-2 rounded-lg text-xs font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-100 transition-smooth cursor-pointer">
+            Tutup
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
   <!-- JAVASCRIPT LOGIC                                               -->
   <!-- ============================================================== -->
   <script>
     // Project Data for Modal Display
     const projectDetails = {
-      jadwalin: {
-        title: "Jadwalin — B2B Automated Roster & Attendance System",
-        role: "Full-Stack Developer (Project-Based Learning 2026)",
-        tech: "Laravel, Tailwind CSS, Alpine.js, Playwright, Cypress, MySQL",
-        overview: "Aplikasi B2B yang dikembangkan untuk menjawab kebutuhan operasional bisnis dalam penjadwalan roster shift kerja otomatis, pemantauan kehadiran berbasis presisi, dan perhitungan timesheet lembur yang terintegrasi.",
+      labprofile: {
+        title: "Website Profile Laboratorium JTI Polinema",
+        role: "Front-End Developer (Proyek PBL 1 // Semester 3)",
+        tech: "HTML5, CSS3, PHP, Responsive Web Design",
+        overview: "Portal akademik profil Laboratorium Information Learning Engineering Technology di Jurusan Teknologi Informasi Politeknik Negeri Malang untuk mendigitalisasi informasi fasilitas akademik, modul pembelajaran, dan publikasi penelitian mahasiswa agar lebih mudah diakses.",
         deliverables: [
-          "Membangun arsitektur perangkat lunak berbasis modular menggunakan Laravel dan Alpine.js.",
-          "Mendesain antarmuka pengguna responsif dan cepat menggunakan Tailwind CSS.",
-          "Mengimplementasikan pengujian end-to-end otomatis (Automated Testing) dengan Playwright dan Cypress untuk memastikan stabilitas kode sebelum deployment.",
-          "Mengelola skema database relasional MySQL untuk data transaksi kehadiran ribuan record."
+          "Merancang dan mengimplementasikan antarmuka pengguna (UI) yang bersih, profesional, dan responsif di berbagai ukuran layar.",
+          "Mengintegrasikan template berbasis PHP untuk kemudahan pengelolaan konten dinamis laboratorium.",
+          "Meningkatkan user experience (UX) bagi civitas akademika dan mahasiswa yang mencari informasi inventaris praktikum.",
+          "Menuntaskan deliverable proyek PBL pertama di Semester 3 bersama tim mahasiswa D4 Sistem Informasi Bisnis."
         ]
       },
       arenahub: {
         title: "Arenahub — Solusi Sistem Informasi Bisnis Penyewaan Fasilitas",
-        role: "Project Manager (Project-Based Learning 2026)",
+        role: "Project Manager (Proyek PBL 2 // 2026)",
         tech: "Project Management, Agile/Scrum, Business Process Modeling, UI/UX Design",
         overview: "Platform digital terintegrasi untuk pemesanan sarana dan lapangan olahraga. Bertujuan mendigitalisasi proses reservasi konvensional menjadi otomatis, transparan, dan terdata.",
         deliverables: [
           "Memimpin tim pengembang multidisiplin dari tahap inisiasi, perumusan PRD (Product Requirement Document), hingga pengembangan teknis.",
           "Menjalankan manajemen alur kerja Agile, memantau sprint burndown, dan memastikan milestone terselesaikan tepat waktu.",
-          "Menjaga konsistensi antarmuka pengguna serta kepatuhan fitur dengan kebutuhan pemilik bisnis dan pengguna akhir."
+          "Menjaga konsistensi antarmuka pengguna serta kepatuhan fitur dengan kebutuhan pemilik bisnis dan pengguna akhir.",
+          "Mendokumentasikan showcase capaian produk dan presentasi verifikasi sistem aplikasi (Foto 4 & 5)."
+        ]
+      },
+      jadwalin: {
+        title: "Jadwalin — B2B Automated Roster & Attendance System",
+        role: "Full-Stack Developer (Proyek PBL 3 // 2026)",
+        tech: "Laravel, Tailwind CSS, Alpine.js, Playwright, Cypress, MySQL",
+        overview: "Aplikasi B2B yang dikembangkan untuk menjawab kebutuhan operasional bisnis dalam penjadwalan roster shift kerja otomatis, pemantauan kehadiran berbasis presisi, dan perhitungan timesheet lembur yang terintegrasi.",
+        deliverables: [
+          "Membangun arsitektur perangkat lunak berbasis modular menggunakan Laravel dan Alpine.js.",
+          "Mendesain antarmuka pengguna responsif dan cepat menggunakan Tailwind CSS.",
+          "Mengimplementasikan pengujian end-to-end otomatis (Automated Testing) dengan Playwright dan Cypress untuk memastikan stabilitas kode sebelum rilis.",
+          "Mengelola skema database relasional MySQL untuk data transaksi kehadiran ribuan record."
         ]
       },
       kmhe: {
@@ -1384,18 +2292,8 @@
         deliverables: [
           "Bertanggung jawab penuh atas manajemen alur kerja (workflow) tim delegasi Politeknik Negeri Malang.",
           "Memimpin tim melewati tahapan seleksi teknis ketat hingga resmi dinyatakan sebagai Finalis Nasional KMHE 2026.",
-          "Menginisiasi kemitraan strategis eksternal bersama Dragonships dan kolaborasi hibah alat laboratorium motor listrik dengan dosen pendamping."
-        ]
-      },
-      labprofile: {
-        title: "Website Profile Laboratorium JTI Polinema",
-        role: "Front-End Developer (Project-Based Learning 2025)",
-        tech: "HTML5, CSS3, PHP, Responsive Web Design",
-        overview: "Portal profil Laboratorium Information Learning Engineering Technology di Jurusan Teknologi Informasi Politeknik Negeri Malang untuk mendigitalisasi informasi fasilitas akademik, modul pembelajaran, dan riset.",
-        deliverables: [
-          "Merancang dan mengimplementasikan antarmuka pengguna (UI) yang bersih, profesional, dan responsif di berbagai ukuran layar.",
-          "Mengintegrasikan template berbasis PHP untuk kemudahan pengelolaan konten dinamis laboratorium.",
-          "Meningkatkan user experience (UX) bagi civitas akademika dan mahasiswa yang mencari informasi inventaris praktikum."
+          "Menginisiasi kemitraan strategis eksternal bersama Dragonships dan kolaborasi hibah alat laboratorium motor listrik dengan dosen pendamping.",
+          "Mengoordinasikan persiapan paddock pit box (Foto 1), defile karpet merah (Foto 2), hingga pelepasan delegasi nasional (Foto 3)."
         ]
       }
     };
@@ -1432,9 +2330,11 @@
     // Modal Control: CV
     function openCvModal() {
       document.getElementById('cvModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
     }
     function closeCvModal() {
       document.getElementById('cvModal').classList.add('hidden');
+      document.body.style.overflow = '';
     }
 
     // Modal Control: Project Detail
@@ -1464,23 +2364,356 @@
       `;
 
       document.getElementById('projectModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
     }
     function closeProjectModal() {
       document.getElementById('projectModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // ================================================================
+    // PHOTO SWITCHER HELPERS (PROJECT CARDS)
+    // ================================================================
+    function setWebProfilePhoto(num) {
+      const previewImg = document.getElementById('webprofile-preview-img');
+      const badgeText = document.getElementById('webprofile-badge-text');
+      const mainBox = document.getElementById('webprofile-main-img-box');
+      const btn1 = document.getElementById('webprofile-thumb-1');
+      const btn2 = document.getElementById('webprofile-thumb-2');
+      if (!previewImg || !btn1 || !btn2) return;
+
+      if (num === 1) {
+        previewImg.src = 'assets/images/pbl-team-cert.jpg';
+        badgeText.innerText = 'Tim Pengembang Almamater';
+        mainBox.onclick = () => openLightboxByImage('assets/images/pbl-team-cert.jpg', 'Proyek PBL 1: Tim Pengembang Web Profile Laboratorium JTI', 'Tim pengembang mahasiswa D4 Sistem Informasi Bisnis mengenakan jas almamater Politeknik Negeri Malang di depan backdrop Indosat JTI Polinema.');
+        btn1.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer';
+        btn1.querySelector('span').className = 'w-2 h-2 rounded-full bg-corporate-600 shrink-0';
+        btn2.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer';
+        btn2.querySelector('span').className = 'w-2 h-2 rounded-full bg-slate-300 shrink-0';
+      } else {
+        previewImg.src = 'assets/images/pbl-team-presentation.jpg';
+        badgeText.innerText = 'Foto Evaluasi Modul';
+        mainBox.onclick = () => openLightboxByImage('assets/images/pbl-team-presentation.jpg', 'Proyek PBL 1: Evaluasi & Capaian Web Profile Lab JTI', 'pengembang dalam proyek pembuatan Web Profile Laboratorium Information and Learning Engineering Technology.');
+        btn2.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer';
+        btn2.querySelector('span').className = 'w-2 h-2 rounded-full bg-corporate-600 shrink-0';
+        btn1.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer';
+        btn1.querySelector('span').className = 'w-2 h-2 rounded-full bg-slate-300 shrink-0';
+      }
+    }
+
+    function setArenahubPhoto(num) {
+      const previewImg = document.getElementById('arenahub-preview-img');
+      const badgeText = document.getElementById('arenahub-badge-text');
+      const mainBox = document.getElementById('arenahub-main-img-box');
+      const btn1 = document.getElementById('arenahub-thumb-1');
+      const btn2 = document.getElementById('arenahub-thumb-2');
+      if (!previewImg || !btn1 || !btn2) return;
+
+      if (num === 1) {
+        previewImg.src = 'assets/images/arenahub-team-standing.jpg';
+        badgeText.innerText = 'Foto 4: Showcase Produk Tim';
+        mainBox.onclick = () => openLightboxByImage('assets/images/arenahub-team-standing.jpg', 'Proyek PBL 2: Tim Pengembang Arenahub & Showcase Produk (Foto 4)', 'Tim pengembang Arenahub menunjukkan antarmuka aplikasi booking fasilitas olahraga di depan backdrop kemitraan Indosat Jurusan TI Polinema.');
+        btn1.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer';
+        btn1.querySelector('span').className = 'w-2 h-2 rounded-full bg-corporate-600 shrink-0';
+        btn2.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer';
+        btn2.querySelector('span').className = 'w-2 h-2 rounded-full bg-slate-300 shrink-0';
+      } else {
+        previewImg.src = 'assets/images/arenahub-team-showcase.jpg';
+        badgeText.innerText = 'Foto 5: Demonstrasi UI';
+        mainBox.onclick = () => openLightboxByImage('assets/images/arenahub-team-showcase.jpg', 'Proyek PBL 2: Demonstrasi Antarmuka & Prototipe Arenahub (Foto 5)', 'Bersama tim pengembang aplikasi android ArenaHub.');
+        btn2.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border-2 border-corporate-600 bg-corporate-50 text-[11px] font-medium text-corporate-900 transition-smooth text-left cursor-pointer';
+        btn2.querySelector('span').className = 'w-2 h-2 rounded-full bg-corporate-600 shrink-0';
+        btn1.className = 'flex-1 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[11px] font-medium text-slate-600 transition-smooth text-left cursor-pointer';
+        btn1.querySelector('span').className = 'w-2 h-2 rounded-full bg-slate-300 shrink-0';
+      }
+    }
+
+    function setKmhePhoto(num) {
+      const previewImg = document.getElementById('kmhe-preview-img');
+      const badgeText = document.getElementById('kmhe-badge-text');
+      const mainBox = document.getElementById('kmhe-main-img-box');
+      const btn1 = document.getElementById('kmhe-thumb-1');
+      const btn2 = document.getElementById('kmhe-thumb-2');
+      const btn3 = document.getElementById('kmhe-thumb-3');
+      if (!previewImg || !btn1 || !btn2 || !btn3) return;
+
+      const inactiveClass = 'flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-[10px] font-medium text-slate-600 transition-smooth cursor-pointer truncate';
+      const activeClass = 'flex items-center justify-center gap-1.5 px-2 py-1.5 rounded-lg border-2 border-emerald-600 bg-emerald-50 text-[10px] font-medium text-emerald-900 transition-smooth cursor-pointer truncate';
+
+      [btn1, btn2, btn3].forEach(b => {
+        b.className = inactiveClass;
+        b.querySelector('span').className = 'w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0';
+      });
+
+      if (num === 1) {
+        previewImg.src = 'assets/images/kmhe-pit-team.jpg';
+        badgeText.innerText = 'Foto 1: Pit Box Paddock';
+        mainBox.onclick = () => openLightboxByImage('assets/images/kmhe-pit-team.jpg', 'KMHE 2026: Tim Riset & Manajerial di Pit Box Paddock (Foto 1)', 'Koordinasi kesiapan teknis kendaraan efisiensi energi bersama tim Tunas Autron di paddock sirkuit KMHE 2026 Universitas Jember.');
+        btn1.className = activeClass;
+        btn1.querySelector('span').className = 'w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0';
+      } else if (num === 2) {
+        previewImg.src = 'assets/images/kmhe-rollout-carpet.jpg';
+        badgeText.innerText = 'Foto 2: Roll-Out Red Carpet';
+        mainBox.onclick = () => openLightboxByImage('assets/images/kmhe-rollout-carpet.jpg', 'KMHE 2026: Roll-Out Prototipe Tunas Autron di Red Carpet (Foto 2)', 'Prosesi defile dan perkenalan prototipe kendaraan hemat energi Tunas Autron di hadapan panitia nasional.');
+        btn2.className = activeClass;
+        btn2.querySelector('span').className = 'w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0';
+      } else if (num === 3) {
+        previewImg.src = 'assets/images/kmhe-delegasi-nasional.jpg';
+        badgeText.innerText = 'Foto 3: Kontingen Finalis';
+        mainBox.onclick = () => openLightboxByImage('assets/images/kmhe-delegasi-nasional.jpg', 'KMHE 2026: Kontingen Delegasi Finalis Nasional di Universitas Jember (Foto 3)', 'Umi Maharani bersama kontingen delegasi rekayasa Politeknik Negeri Malang dan dua prototipe mobil hemat energi di venue Universitas Jember.');
+        btn3.className = activeClass;
+        btn3.querySelector('span').className = 'w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0';
+      }
+    }
+
+    // ================================================================
+    // GALLERY & LIGHTBOX LOGIC
+    // ================================================================
+    const galleryItems = [
+      {
+        src: "assets/images/pbl-team-cert.jpg",
+        title: "Web Profile Lab JTI — Tim Mahasiswa SIB (Semester 3)",
+        category: "Proyek PBL 1",
+        date: "Semester 3 (2025)",
+        caption: "Bersama tim pengembang dalam proyek pembuatan Web Profile Laboratorium Information and Learning Engineering Technology"
+      },
+      {
+        src: "assets/images/pbl-team-presentation.jpg",
+        title: "Evaluasi & Capaian Web Profile Lab JTI",
+        category: "Proyek PBL 1",
+        date: "Semester 3 (2025)",
+        caption: "Presentasi pengujian fungsional dan laporan teknis modul profil laboratorium di hadapan dosen pengampu Jurusan TI Polinema."
+      },
+      {
+        src: "assets/images/arenahub-team-standing.jpg",
+        title: "Tim Arenahub — Showcase Produk Aplikasi (Foto 4)",
+        category: "Proyek PBL 2",
+        date: "PBL 2026",
+        caption: "Bersama tim pengembang dalam pembuatan proyek aplikasi ArenaHub, aplikasi booking lapangan menggunakan Flutter, Dart dan terintegrasi dengan Payment Gateway"
+      },
+      {
+        src: "assets/images/arenahub-team-showcase.jpg",
+        title: "Demonstrasi Antarmuka & Prototipe Arenahub (Foto 5)",
+        category: "Proyek PBL 2",
+        date: "PBL 2026",
+        caption: "Bersama tim pengembang aplikasi android ArenaHub."
+      },
+      {
+        src: "assets/images/kmhe-delegasi-nasional.jpg",
+        title: "Kontingen Delegasi Finalis Nasional KMHE 2026 (Foto 3)",
+        category: "KMHE 2026",
+        date: "KMHE 2026",
+        caption: "Dokumentasi pada kegiatan Kontes Mobil Hemat Energi (KMHE) 2026 di Universitas Jember, Tim Tunas Autron dan Tim Wiraraja.."
+      },
+      {
+        src: "assets/images/kmhe-rollout-carpet.jpg",
+        title: "Roll-Out Prototipe Tunas Autron — Red Carpet (Foto 2)",
+        category: "KMHE 2026",
+        date: "KMHE 2026",
+        caption: "Dokumentasi Tim Tunas Autron pada kegiatan Kontes Mobil Hemat Energi (KMHE) 2026 di Universitas Jember."
+      },
+      {
+        src: "assets/images/kmhe-pit-team.jpg",
+        title: "Tim Riset & Manajerial di Pit Box Paddock (Foto 1)",
+        category: "KMHE 2026",
+        date: "KMHE 2026",
+        caption: "Dokumentasi tim setelah melaksanakan race."
+      },
+      {
+        src: "assets/images/beasiswa-unggulan-stage.jpg",
+        title: "Penandatanganan Kontrak Beasiswa Unggulan 2025",
+        category: "Prestasi Akademik",
+        date: "Batch IV (2025)",
+        caption: "Pembekalan dan penandatanganan kontrak resmi Beasiswa Unggulan tingkat nasional oleh Pusat Layanan Pembiayaan Pendidikan (Puslapdik) Kemendikdasmen RI di Malang."
+      },
+      {
+        src: "assets/images/sertifikat-esai-nasional.jpg",
+        title: "Sertifikat Juara 1 Lomba Esai Tingkat Nasional",
+        category: "Juara Nasional",
+        date: "31 Mei 2025",
+        caption: "Sertifikat penghargaan Juara 1 Lomba Esai Nasional SELEGTIF DPM FAI Universitas Islam Lamongan dengan tema tata kelola transparansi dan akuntabilitas kepemimpinan publik."
+      },
+      {
+        src: "assets/images/sertifikat-ukbi.jpg",
+        title: "Sertifikat Uji Kemahiran Berbahasa Indonesia (UKBI)",
+        category: "Sertifikasi Bahasa",
+        date: "16 Juli 2024 - 2026",
+        caption: "Predikat 'Unggul' dengan Skor 630 dari Badan Pengembangan dan Pembinaan Bahasa Kemendikbudristek RI, mencakup kemahiran mendengarkan, merespons kaidah, dan membaca teks akademik tingkat tinggi."
+      },
+      {
+        src: "assets/images/forum-diskusi-ilmiah-2025.jpg",
+        title: "Juara 1 Esai Forum Diskusi Ilmiah 2025",
+        category: "Juara 1 Esai",
+        date: "2025",
+        caption: "Meraih juara 1 pada kompetisi penulisan esai ilmiah yang diadakan oleh UKM Pendidikan dan Penalaran Politeknik Negeri Malang."
+      },
+      {
+        src: "assets/images/mc-techno-fair-2025.jpg",
+        title: "Master of Ceremony Techno Fair & Seminar 2025",
+        category: "Public Speaking",
+        date: "Agustus 2025",
+        caption: "Master of Ceremony dalam acara Techno Fair and Seminar serta LKTIN yang diadakan oleh UKM Pendidikan dan Penalaran Politeknik Negeri Malang."
+      },
+      {
+        src: "assets/images/tryout-snbt-2025.jpg",
+        title: "Executive Secretary Try Out SNBT 2025",
+        category: "Kepanitiaan & Event",
+        date: "2025",
+        caption: "Mengikuti program kerja pertama dan diamanahi sebagai sekretaris pelaksana dalam acara Try Out SNBT 2025."
+      },
+      {
+        src: "assets/images/moderator-penelitian-ilmiah.jpg",
+        title: "Moderator Penelitian Ilmiah UKM Pendidikan & Penalaran",
+        category: "Moderator",
+        date: "2025",
+        caption: "Sebagai moderator dan memandu sesi pemaparan hasil riset ilmiah mahasiswa, memfasilitasi tanya jawab dengan pemateri."
+      },
+      {
+        src: "assets/images/sertifikat-bi-malang.jpg",
+        title: "Sertifikat Partisipasi World Book Day 2025 — Bank Indonesia",
+        category: "Penulisan & Literasi",
+        date: "13 Mei 2025",
+        caption: "Sertifikat penghargaan dari Kepala Kantor Perwakilan Bank Indonesia Malang atas partisipasi aktif dalam lomba menulis artikel umum peringatan World Book Day 2025."
+      },
+      {
+        src: "assets/images/sertifikat-semar-uns.jpg",
+        title: "Sertifikat Semar Entrepreneur 2024 — BEM UNS",
+        category: "Kewirausahaan",
+        date: "13 Oktober 2024",
+        caption: "Sertifikat kepesertaan dalam program inkubasi bisnis dan kompetisi Semar Entrepreneur yang diselenggarakan Badan Eksekutif Mahasiswa Universitas Negeri Sebelas Maret."
+      },
+      {
+        src: "assets/images/sertifikat-ketua-osis.jpg",
+        title: "Sertifikat Penghargaan Ketua OSIS SMAN 1 Singgahan",
+        category: "Kepemimpinan",
+        date: "Masa Bakti 2022/2023",
+        caption: "Sertifikat tanda kehormatan dan pengabdian sebagai Ketua OSIS SMAN 1 Singgahan dalam memimpin kepengurusan organisasi siswa dan berbagai agenda sekolah."
+      },
+      {
+        src: "assets/images/sertifikat-sekum-himo.jpg",
+        title: "Sertifikat Sekretaris Umum Forum Musyawarah OSIS Tuban",
+        category: "Organisasi Daerah",
+        date: "Generasi 3 (2022/2023)",
+        caption: "Sertifikat penghargaan dari Cabang Dinas Pendidikan Provinsi Jawa Timur Wilayah Bojonegoro-Tuban atas kontribusi sebagai Sekretaris Umum Himpunan Musyawarah OSIS (HIMO)."
+      },
+      {
+        src: "assets/images/osis-pelantikan-tuban.jpg",
+        title: "Pelantikan & Reorganisasi Pengurus Forum OSIS Kabupaten Tuban",
+        category: "Dokumentasi",
+        date: "Kabupaten Tuban",
+        caption: "Dalam acara pelantikan dan serah terima jabatan kepengurusan Himpunan Musyawarah OSIS se-Kabupaten Tuban."
+      }
+    ];
+
+    let currentLightboxIndex = 0;
+
+    function openLightbox(index) {
+      if (index >= 0 && index < galleryItems.length) {
+        currentLightboxIndex = index;
+      }
+      updateLightbox();
+      document.getElementById('imageLightboxModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function openLightboxByImage(src, title, caption) {
+      const idx = galleryItems.findIndex(item => item.src === src);
+      if (idx !== -1) {
+        openLightbox(idx);
+      } else {
+        document.getElementById('lightboxImage').src = src;
+        document.getElementById('lightboxTitle').innerText = title || "Dokumentasi Bukti Proyek";
+        document.getElementById('lightboxCaption').innerText = caption || "Bukti autentik hasil pengerjaan proyek dan keterlibatan kegiatan.";
+        document.getElementById('lightboxBadge').innerText = "BUKTI FOTO";
+        document.getElementById('lightboxDate').innerText = "Dokumentasi";
+        document.getElementById('lightboxCategory').innerText = "Arsip Portofolio";
+        document.getElementById('lightboxCounter').innerText = "Bukti Langsung";
+        document.getElementById('lightboxFullLink').href = src;
+        document.getElementById('imageLightboxModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function updateLightbox() {
+      const item = galleryItems[currentLightboxIndex];
+      if (!item) return;
+
+      const img = document.getElementById('lightboxImage');
+      img.src = item.src;
+      img.alt = item.title;
+
+      document.getElementById('lightboxTitle').innerText = item.title;
+      document.getElementById('lightboxCaption').innerText = item.caption;
+      document.getElementById('lightboxBadge').innerText = item.category.toUpperCase();
+      document.getElementById('lightboxDate').innerText = item.date;
+      document.getElementById('lightboxCategory').innerText = item.category;
+      document.getElementById('lightboxCounter').innerText = `${currentLightboxIndex + 1} / ${galleryItems.length}`;
+      document.getElementById('lightboxFullLink').href = item.src;
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageLightboxModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function prevLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIndex = (currentLightboxIndex - 1 + galleryItems.length) % galleryItems.length;
+      updateLightbox();
+    }
+
+    function nextLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIndex = (currentLightboxIndex + 1) % galleryItems.length;
+      updateLightbox();
+    }
+
+    function filterGallery(category) {
+      const cards = document.querySelectorAll('.gallery-card');
+      const buttons = document.querySelectorAll('.gal-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-corporate-700', 'text-white');
+        btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200');
+      });
+
+      const activeBtn = document.getElementById(`gal-filter-${category}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-corporate-700', 'text-white');
+        activeBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+        } else if (card.classList.contains(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
     }
 
     // Close Modals on Backdrop Click or Escape
     window.addEventListener('click', (e) => {
       const cvModal = document.getElementById('cvModal');
       const projectModal = document.getElementById('projectModal');
+      const imageLightboxModal = document.getElementById('imageLightboxModal');
       if (e.target === cvModal) closeCvModal();
       if (e.target === projectModal) closeProjectModal();
+      if (e.target === imageLightboxModal) closeLightbox();
     });
 
     window.addEventListener('keydown', (e) => {
+      const isLightboxOpen = !document.getElementById('imageLightboxModal').classList.contains('hidden');
       if (e.key === 'Escape') {
         closeCvModal();
         closeProjectModal();
+        closeLightbox();
+      } else if (isLightboxOpen && e.key === 'ArrowLeft') {
+        prevLightbox();
+      } else if (isLightboxOpen && e.key === 'ArrowRight') {
+        nextLightbox();
       }
     });
 

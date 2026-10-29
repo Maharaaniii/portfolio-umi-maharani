@@ -20,10 +20,39 @@ Portofolio web berbasis *Single Page Application* (SPA) dengan tema **Engineerin
 ## 📁 Struktur Direktori
 ```text
 umi-maharani-portfolio/
-├── index.html        # File utama SPA (HTML5 + Tailwind CSS + Logic JS)
-├── vercel.json       # Konfigurasi deployment & security header untuk Vercel
-└── README.md         # Petunjuk penggunaan dan panduan deployment
+├── assets/
+│   ├── css/
+│   │   └── style.css     # File CSS eksternal kustom
+│   └── images/           # Seluruh aset dokumentasi & foto portofolio
+├── index.html            # File utama SPA (HTML5 + Tailwind CSS + Logic JS)
+├── vercel.json           # Konfigurasi deployment & security header untuk Vercel
+└── README.md             # Petunjuk penggunaan dan panduan deployment
 ```
+
+---
+
+## 🌐 Cara Deploy ke Render (Static Site)
+
+1. **Push Perubahan ke GitHub**:
+   Pastikan kode terbaru sudah di-commit dan di-push ke repositori GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: pisahkan styling internal ke css eksternal"
+   git push origin main
+   ```
+2. **Buka Dashboard Render**:
+   - Kunjungi [dashboard.render.com](https://dashboard.render.com) dan login dengan akun GitHub Anda.
+3. **Buat Static Site Baru**:
+   - Klik tombol **"New +"** di pojok kanan atas, lalu pilih **"Static Site"**.
+   - Pilih repositori portofolio GitHub Anda (misal: `portfolio-umi-maharani` atau repositori terkait).
+4. **Konfigurasi Pengaturan**:
+   - **Name**: Beri nama proyek (misal: `umi-maharani-portfolio`).
+   - **Branch**: `main`
+   - **Root Directory**: *(kosongkan / biarkan default)*
+   - **Build Command**: *(kosongkan / biarkan default)*
+   - **Publish Directory**: `.` (titik / root)
+5. **Klik "Create Static Site"**:
+   Render akan langsung men-deploy website Anda dan memberikan URL aktif (seperti `https://umi-maharani-portfolio.onrender.com`).
 
 ---
 
